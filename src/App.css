@@ -4,7 +4,9 @@
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight:700;
 }
-
+body{
+  background-color: rgb(198, 251, 233);
+}
 
 .slidecontainer {
   width: 100%; /* Width of the outside container */
@@ -15,8 +17,8 @@
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 99%; /* Full-width */
-  height: 5px; /* Specified height */
-  background: #1467b0; /* Grey background */
+  height: 10px; /* Specified height */
+  background: #2187e0; /* Grey background */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -38,22 +40,25 @@
   height: 25px; /* Slider handle height */
   background: #122079; /* Green background */
   cursor: pointer; /* Cursor on hover */
+
 }
 
 .slider::-moz-range-thumb {
   width: 25px; /* Set a specific slider handle width */
   height: 25px; /* Slider handle height */
-  background: #0d315b; /* Green background */
+  background: #83b127; /* Green background */
   cursor: pointer; /* Cursor on hover */
+  background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
 }
 .input{
-  background-color: #5e8db6;
-  width: 825px;
-  height: 50px;
+  background-color: #83a5c3;
+  width: 805px;
+  height: 60px;
   position: relative;
   float: left;
   padding: 10px;
   border-radius: 20px;
+  border: red solid 1px;
 }
 .value{
   border: 2px solid red;
@@ -61,7 +66,7 @@
   position: relative;
   float: left;
   padding: 10px;
-  width: 105px;
+  width: 125px;
   margin-left: 10px;
   border-radius: 20px;
 }
@@ -116,7 +121,7 @@
   border-radius: 20px;
 }
 .numbers{
-  width: 100px;
+  width: 120px;
   height: 25px;
   background-color: azure;
   border-radius: 20px;
@@ -136,3 +141,67 @@
   height: 100px;
   border-radius: 20px;
 }
+
+
+
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 95%;
+  max-width: 900px;
+  outline: none;
+}
+input[type="range"]:focus,
+input[type="range"]:active,
+input[type="range"]::-moz-focus-inner,
+input[type="range"]::-moz-focus-outer {
+  border: 0;
+  outline: none;
+}
+
+input[type="range"]::-moz-range-thumb:active {
+  background-position: 100% 0px;
+  transform: scale(2) rotateZ(var(--thumb-rotate, 10deg));
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 20px;
+  background: #eee;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-progress {
+  height: 5px;
+  background: #a40e0e;
+  border-radius: 20px;
+  cursor: pointer;
+}
+input[type="range"]::-webkit-slider-thumb {
+  border: none;
+  height: 27px;
+  width: 27px;
+  background-color: transparent;
+  background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
+  background-position: 0 0;
+  background-size: cover;
+  transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+  cursor: pointer;
+  margin-top: -8px;
+  -webkit-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb:active {
+  background-position: 100% 0px;
+  transform: scale(2) rotateZ(var(--thumb-rotate, 10deg));
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  background: rgb(67, 104, 159);
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 13px;
+}
+

@@ -52,7 +52,7 @@ const YR = Math.floor(YTR*12/Number(MA));
   return (
     <div className="App">
       <div className='bars'>
-        <div className="jumbotron">
+        <div className="">
           <h2>HDX DEX Fee Distribution Calculator App</h2>
         </div>
 
@@ -91,8 +91,8 @@ const YR = Math.floor(YTR*12/Number(MA));
             Daily dex volume:
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="1000000000" value={DDV} className="slider" id="2" 
-            onChange={(e)=>setDDV(e.target.value)}/>
+            <input type="range" min="1" max="100000000" value={DDV} className="slider" id="2" step="100000"
+            onChange={(e)=>setDDV(e.target.value)}/>  
           </div> 
           <div className='value'>
             ${DDV}
