@@ -91,7 +91,7 @@ const YR = Math.floor(YTR*12/Number(MA));
             Daily dex volume:
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="10000000" value={DDV} className="slider" id="2" 
+            <input type="range" min="1" max="1000000000" value={DDV} className="slider" id="2" 
             onChange={(e)=>setDDV(e.target.value)}/>
           </div> 
           <div className='value'>
