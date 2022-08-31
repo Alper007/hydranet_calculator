@@ -1,0 +1,138 @@
+.App {
+  text-align: center;
+  font-size: 16px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:700;
+}
+
+
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 99%; /* Full-width */
+  height: 5px; /* Specified height */
+  background: #1467b0; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+  
+
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #122079; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #0d315b; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+.input{
+  background-color: #5e8db6;
+  width: 825px;
+  height: 50px;
+  position: relative;
+  float: left;
+  padding: 10px;
+  border-radius: 20px;
+}
+.value{
+  border: 2px solid red;
+  background-color: aqua;
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: 105px;
+  margin-left: 10px;
+  border-radius: 20px;
+}
+.text{
+  border: 2px solid red;
+  background-color: aqua;
+  padding: 10px;
+  width: 320px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.div{
+  position: relative;
+  float: left;
+  margin-top: 8px;
+  margin-left: 300px;
+  border-radius: 20px;
+}
+.infos1{
+  position: relative;
+  float: left;
+  margin-left: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.infos2{
+  position: relative;
+  float: left;
+  margin-left: 300px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.bars{
+  position: relative;
+  float: left;
+  border-radius: 20px;
+}
+.info{
+  position: relative;
+  float: left;
+  background-color: #ed6161;
+  border: 2px solid rgb(157, 32, 32);
+  padding: 10px;
+  width: 312px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  height: 100px;
+  border-radius: 20px;
+}
+.numbers{
+  width: 100px;
+  height: 25px;
+  background-color: azure;
+  border-radius: 20px;
+  margin-left: 90px;
+  margin-top: 10px;
+}
+.infofirst{
+  background-color: #d24aad;
+  position: relative;
+  float: left;
+  border: 2px solid rgb(157, 32, 32);
+  padding: 10px;
+  width: 305px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  height: 100px;
+  border-radius: 20px;
+}
