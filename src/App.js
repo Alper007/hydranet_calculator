@@ -44,9 +44,9 @@ const TTF = Math.floor(TDF*5/100);
 
 
 const YTR = Math.floor(0.35*TDF*((((Number(B1)+Number(C1)/26))*15000)+Number(D1))/(((((Number(B1)+Number(B2)+Number(C2)/26))*15000)+Number(D2))));
-const DR = Math.floor(YTR/30);
-const MR = Math.floor(YTR/MA);
-const YR = Math.floor(MR*MA);
+const DR = Math.floor(YTR/30/Number(MA));
+const MR = Math.floor(YTR/Number(MA));
+const YR = Math.floor(YTR*12/Number(MA));
 
 
   return (
