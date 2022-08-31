@@ -53,7 +53,7 @@ const YR = Math.floor(MR*MA);
     <div className="App">
       <div className='bars'>
         <div className="jumbotron">
-          <h2>calculator</h2>
+          <h2>HDX DEX Fee Distribution Calculator App</h2>
         </div>
 
         <div className='infos1'>
