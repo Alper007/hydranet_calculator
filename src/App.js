@@ -85,17 +85,18 @@ const MPSB = () =>{
   return (
     <div className="App">
       <div className='bars'>
+        
         <div className="header">
-          <h1>HDX DEX Fee Distribution Calculator App</h1>
+          <p>HDX DEX Fee Distribution Calculator Application</p>
         </div>
 
         <div className='infos1'>
           <div className='infofirst'>
-            Total deducted fee({MA} month): 
+            Total deducted fee ({MA} month): 
             <div className='numbers'><p>${comma(TDF)}</p></div>
           </div>
           <div className='info'>
-            HNFT holders and HDX stakers will get(%35):
+            HNFT holders will get (%35):
             <div className='numbers'><p>${comma(TSF)}</p></div>
           </div>
           <div className='info'>
@@ -172,7 +173,7 @@ const MPSB = () =>{
             Your MP amount (should be {Math.floor(MPSB())}):
           </div>
           <div  className='input'>
-            <input type="range" min="0" max="1000" value={C1} className="slider" id="5" 
+            <input type="range" min="0" max="5000" value={C1} className="slider" id="5" 
             onChange={(e)=>setC1(e.target.value)}
             />
           </div> 
