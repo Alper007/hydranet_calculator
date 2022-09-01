@@ -125,7 +125,7 @@ const MPSB = () =>{
             Daily DEX volume:
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="50000001" value={DDV} className="slider" id="2" step="100000"
+            <input type="range" min="1" max="500000001" value={DDV} className="slider" id="2" step="100000"
             onChange={(e)=>setDDV(e.target.value)}/>  
           </div> 
           <div className='value'>
@@ -210,7 +210,7 @@ const MPSB = () =>{
             Total staked HDX amount:
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="10000000" value={D2} className="slider" id="8" 
+            <input type="range" min="1" max="100000000" value={D2} className="slider" id="8" 
             onChange={(e)=>setD2(e.target.value)}/>
           </div> 
           <div className='value'>
