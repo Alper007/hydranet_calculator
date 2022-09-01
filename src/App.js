@@ -125,7 +125,7 @@ const MPSB = () =>{
             Daily DEX volume:
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="20000001" value={DDV} className="slider" id="2" step="100000"
+            <input type="range" min="1" max="50000001" value={DDV} className="slider" id="2" step="100000"
             onChange={(e)=>setDDV(e.target.value)}/>  
           </div> 
           <div className='value'>
@@ -220,7 +220,7 @@ const MPSB = () =>{
       </div>
       <div className='infos2'>
         <div className='infofirst'>
-          Your total revenue (for {MA} month):
+          Total revenue (for {MA} month):
           <div className='numbers'><p>${comma(YTR)}</p></div>
         </div>
         <div className='info'>

@@ -865,13 +865,181 @@
     margin-top: -9px;
   }
 }
-@media screen and (max-width: 479px){
+@media screen and (min-width: 425px) and (max-width: 479px){
   
   .App {
     text-align: center;
     font-size: 6px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
+
+  }
+  body{
+    background-color: rgb(161, 255, 224);
+  }
+  .header{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 410px;
+    border-radius: 20px;
+    padding: 2px;
+    color:rgb(78, 11, 60);
+    height: 90px;
+    border: solid rgb(101, 99, 117) 12px;
+  }
+  
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 99%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #2187e0; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+   .slider:hover {
+    opacity: 8; 
+  }  
+
+  .input{
+    background-color: #83a5c3;
+    width:225px;
+    height: 10px;
+    position: relative;
+    float: left;
+    padding: 9px;
+    border-radius: 8px;
+    border: red solid 1px;
+    margin-top: 3px;
+  }
+  .value{
+    border: 2px solid rgb(255, 0, 0);
+    background-color: aqua;
+    position: relative;
+    float: left;
+    padding: 2.5px;
+    width: 45px;
+    margin-left: 2px;
+    border-radius: 8px;
+    margin-top: 3px;
+  }
+  .text{
+    border: 2px solid red;
+    background-color: aqua;
+    padding: 2px;
+    width: 130px;
+    position: relative;
+    float: left;
+    margin-right: 2px;
+    border-radius: 15px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    height: 18px;
+  }
+  .div{
+    position: relative;
+    float: left;
+    margin-top: 1px;
+    margin-left: 10px;
+    border-radius: 15px;
+
+  }
+  .infos1{
+    position: relative;
+    float: left;
+    margin-left: 9px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    border-radius: 15px;
+  }
+  .infos2{
+    position: relative;
+    float: left;
+    margin-left: 9px;
+    margin-top: 3px;
+    border-radius: 15px;
+  }
+  .info, .infofirst{
+    position: relative;
+    float: left;
+    background-color: #fe8b84;
+    border: 2px solid rgb(148, 18, 18);
+    padding: 4px;
+    width: 100px;
+    position: relative;
+    float: left;
+    margin-right: 2px;
+    height:37px;
+    border-radius: 15px;
+  }
+  .infofirst{
+    background-color: #d084f9; 
+  }
+  .bars{
+    position: relative;
+    float: left;
+    border-radius: 15px;
+  }
+  .numbers{
+    width: 40px;
+    height: 10px;
+    background-color: rgb(255, 236, 198);
+    border-radius: 15px;
+    margin-left: 23px;
+    margin-top: 2px;
+    margin-bottom: 7px;
+    position: absolute;
+    bottom: 0;
+  }
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    background: transparent;
+    width: 95%;
+    max-width: 900px;
+    outline: none;
+  }
+  
+  input[type="range"]::-webkit-slider-thumb {
+    border: none;
+    height: 8px;
+    width: 8px;
+    background-color: transparent;
+    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
+    background-position: 0 0;
+    background-size: cover;
+    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+    cursor: pointer;
+    margin-top: -3px;
+    -webkit-appearance: none;
+  }
+  
+  input[type="range"]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    background: rgb(67, 104, 159);
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -9px;
+  }
+}
+
+@media screen and (max-width: 425px){
+  
+  .App {
+    text-align: center;
+    font-size: 6px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:700;
+
   }
   body{
     background-color: rgb(161, 255, 224);
