@@ -25,6 +25,8 @@ function App() {
   // MR: monthly revenue
   // YR: yearly revenue
   // YTR:your total revenue
+  // MPSB: mp should be
+  // TMPSH: total mp should be
 
   const [DDV, setDDV] = useState(1);
   const [P, setP] = useState(1);
@@ -48,35 +50,66 @@ const DR = Math.floor(YTR/30/Number(MA));
 const MR = Math.floor(YTR/Number(MA));
 const YR = Math.floor(YTR*12/Number(MA));
 
+const comma = (x) => {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
+const MPSB = () =>{ 
+  var x;
+  if(MA<=12){
+    x=Math.floor(MA*2.17*B1);
+  }else if(MA>12 && MA<=24){
+    x=26*B1+Math.floor((MA-12)*2.17*B1)/2;
+  }else if(MA>24 && MA<=36){
+    x=39*B1+Math.floor((MA-24)*2.17*B1)/4;
+  }else if(MA>36 && MA<=48){
+    x=45.5*B1+Math.floor((MA-36)*2.17*B1)/8;
+  }
+  return x;
+}
+
+  const TMPSB = () =>{ 
+    var y;
+    if(MA<=12){
+      y=Math.floor(MA*2.17*B2);
+    }else if(MA>12 && MA<=24){
+      y=26*B2+Math.floor((MA-12)*2.17*B2)/2;
+    }else if(MA>24 && MA<=36){
+      y=39*B2+Math.floor((MA-24)*2.17*B2)/4;
+    }else if(MA>36 && MA<=48){
+      y=45.5*B2+Math.floor((MA-36)*2.17*B2)/8;
+    }
+    return y;
+}
+ 
   return (
     <div className="App">
       <div className='bars'>
-        <div className="">
-          <h2>HDX DEX Fee Distribution Calculator App</h2>
+        <div className="header">
+          <h1>HDX DEX Fee Distribution Calculator App</h1>
         </div>
 
         <div className='infos1'>
           <div className='infofirst'>
             Total deducted fee({MA} month): 
-            <div className='numbers'><p>${TDF}</p></div>
+            <div className='numbers'><p>${comma(TDF)}</p></div>
           </div>
           <div className='info'>
-            Hnft holders/stakers will get(%35):
-            <div className='numbers'><p>${TSF}</p></div>
+            HNFT holders and HDX stakers will get(%35):
+            <div className='numbers'><p>${comma(TSF)}</p></div>
           </div>
           <div className='info'>
            Liq providers will get(%60):
-           <div className='numbers'><p>${TPF}</p></div>
+           <div className='numbers'><p>${comma(TPF)}</p></div>
           </div>
           <div className='info'>
             Treasury will get(%5):
-            <div className='numbers'><p>${TTF}</p></div>
+            <div className='numbers'><p>${comma(TTF)}</p></div>
           </div>
       </div>
         <div className='div'>
           <div className='text'>
-            How many month you will lock HNFTs:  
+           HNFTs locking duration(month):  
           </div>
           <div  className='input'>
             <input type="range" min="1" max="48" value={MA} className="slider" id="1" 
@@ -88,14 +121,14 @@ const YR = Math.floor(YTR*12/Number(MA));
         </div>
         <div className='div'>
           <div className='text'>
-            Daily dex volume:
+            Daily DEX volume:
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="100000000" value={DDV} className="slider" id="2" step="100000"
+            <input type="range" min="1" max="20000001" value={DDV} className="slider" id="2" step="100000"
             onChange={(e)=>setDDV(e.target.value)}/>  
           </div> 
           <div className='value'>
-            ${DDV}
+            ${comma(DDV-1)}
           </div>
         </div>
         {/* <div className='div'>
@@ -136,7 +169,7 @@ const YR = Math.floor(YTR*12/Number(MA));
         </div>
         <div className='div'>
           <div className='text'>
-            Your MP amount:
+            Your MP amount (should be {Math.floor(MPSB())}):
           </div>
           <div  className='input'>
             <input type="range" min="0" max="1000" value={C1} className="slider" id="5" 
@@ -149,14 +182,14 @@ const YR = Math.floor(YTR*12/Number(MA));
         </div>
         <div className='div'>
           <div className='text'>
-            Total MP amount:
+            Total MP amount (should be {comma(Math.floor(TMPSB()))}):
           </div>
           <div  className='input'>
-            <input type="range" min="0" max="10000" value={C2} className="slider" id="6" 
+            <input type="range" min="0" max="500000" value={C2} className="slider" id="6" 
             onChange={(e)=>setC2(e.target.value)}/>
           </div> 
           <div className='value'>
-            {C2}
+            {comma(C2)}
           </div>
         </div>
         <div className='div'>
@@ -186,20 +219,20 @@ const YR = Math.floor(YTR*12/Number(MA));
       </div>
       <div className='infos2'>
         <div className='infofirst'>
-          Your total revenue(for {MA} month):
-          <div className='numbers'><p>${YTR}</p></div>
+          Your total revenue (for {MA} month):
+          <div className='numbers'><p>${comma(YTR)}</p></div>
         </div>
         <div className='info'>
           Daily revenue:
-          <div className='numbers'><p>${DR}</p></div>
+          <div className='numbers'><p>${comma(DR)}</p></div>
         </div>
         <div className='info'>
           Montly revenue:
-          <div className='numbers'><p>${MR}</p></div>
+          <div className='numbers'><p>${comma(MR)}</p></div>
         </div>
         <div className='info'>
           Yearly revenue:
-          <div className='numbers'><p>${YR}</p></div>
+          <div className='numbers'><p>${comma(YR)}</p></div>
         </div>
       </div>
     </div>
