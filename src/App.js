@@ -37,6 +37,7 @@ function App() {
   const [C2, setC2] = useState(0);
   const [D1, setD1] = useState(0);
   const [D2, setD2] = useState(1);
+  const [Eng, setEng] = useState(true);
 
 
 const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000) ;
@@ -68,6 +69,14 @@ const MPSB = () =>{
   return x;
 }
 
+const changeLange = () =>{
+  if (Eng == true){
+    setEng(false)
+  }else{
+    setEng(true);
+  }
+}
+
   const TMPSB = () =>{ 
     var y;
     if(MA<=12){
@@ -85,32 +94,36 @@ const MPSB = () =>{
   return (
     <div className="App">
       <div className='bars'>
-        
         <div className="header">
-          <p>HDX DEX Fee Distribution Calculator Application</p>
+          <p>{Eng ? "HDX DEX Fee Distribution Calculator Application" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
+          
         </div>
-
+        <div className='button'>
+          <button className="btn btn-success" onClick={changeLange}>{Eng ? "TURKISH" : "ENGLISH"}</button>
+        </div>
         <div className='infos1'>
           <div className='infofirst'>
-            Total deducted fee ({MA} month): 
+           {Eng ? <p>Total deducted fee (for {MA} month):</p> : <p>Toplam kesilen fee ({MA} ay için)</p>}
             <div className='numbers'><p>${comma(TDF)}</p></div>
           </div>
           <div className='info'>
-            HNFT holders will get (%35):
+          {Eng ? "HNFT holders will get (%35):" : "HNFT sahiplerinin alacağı (%35):"}
             <div className='numbers'><p>${comma(TSF)}</p></div>
           </div>
           <div className='info'>
-           Liq providers will get(%60):
+          {Eng ? "Liq providers will get(%60):" : "Likidite sağlayıcıları (%60):"}
            <div className='numbers'><p>${comma(TPF)}</p></div>
           </div>
           <div className='info'>
-            Treasury will get(%5):
+          {Eng ? "Treasury will get(%5):" : "Hazinenin alacağı (%5):"}
             <div className='numbers'><p>${comma(TTF)}</p></div>
           </div>
       </div>
         <div className='div'>
           <div className='text'>
-           HNFTs locking duration(month):  
+          {Eng ? "HNFTs locking duration(month):" : "HNFT kitleme süresi (Ay):"}
+          <input className="inputNumber" type="number" placeholder="    1<x<48" min="1" max="48" value={MA}  
+          onChange={(e)=>{if(e.target.value<=48 && e.target.value>=0)setMA(e.target.value)}}/> 
           </div>
           <div  className='input'>
             <input type="range" min="1" max="48" value={MA} className="slider" id="1" 
@@ -122,7 +135,9 @@ const MPSB = () =>{
         </div>
         <div className='div'>
           <div className='text'>
-            Daily DEX volume:
+          {Eng ? "Daily DEX volume:" : "Günlük DEX hacmi:"}
+            <input className="inputNumber" type="number" placeholder=" 1<x<500000000" min="1" max="500000000" value={DDV}  
+            onChange={(e)=>{if(e.target.value<=500000000 && e.target.value>=0)setDDV(e.target.value)}}/> 
           </div>
           <div  className='input'>
             <input type="range" min="1" max="500000001" value={DDV} className="slider" id="2" step="100000"
@@ -132,24 +147,28 @@ const MPSB = () =>{
             ${comma(DDV-1)}
           </div>
         </div>
-        {/* <div className='div'>
+        <div className='div'>
           <div className='text'>
-            Hdx price:
+          {Eng ? "Hdx price:" : "HDX fiyatı:"}
+            <input className="inputNumber" type="number" placeholder="     0<x<100" min="0.1" max="100" step="0.1" value={P} 
+            onChange={(e)=>{if(e.target.value<=100 && e.target.value>=0)setP(e.target.value)}}/> 
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="100" value={P} className="slider" id="0" 
+            <input type="range" min="0" max="100" value={P} className="slider" id="0" step="0.1"
             onChange={(e)=>setP(e.target.value)}/>
           </div> 
           <div className='value'>
             ${P}
           </div>
-        </div> */}
+        </div>
         <div className='div'>
           <div className='text'>
-            Your HNFT amount:
+          {Eng ? "Your HNFT amount:" : "HNFT adediniz:"}
+            <input className="inputNumber" type="number" placeholder="     1<x<200" min="1" max="200" value={B1} 
+            onChange={(e)=>{if(e.target.value<=200 && e.target.value>=0)setB1(e.target.value)}}/> 
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="100" value={B1} className="slider" id="3" 
+            <input type="range" min="1" max="200" value={B1} className="slider" id="3" 
             onChange={(e)=>setB1(e.target.value)}/>
           </div> 
           <div className='value'>
@@ -158,19 +177,24 @@ const MPSB = () =>{
         </div>
         <div className='div'>
           <div className='text'>
-            Total HNFT amount:
+          {Eng ? "Total HNFT amount:" : "Toplam HNFT adedi:"}
+            <input className="inputNumber" type="number" placeholder="1<x<10000" min="1" max="10000" value={B2}  
+            onChange={(e)=>{if(e.target.value<=10000 && e.target.value>=0)setB2(e.target.value)}}/> 
           </div>
           <div  className='input'>
             <input type="range" min="0" max="10000" value={B2} className="slider" id="4" 
             onChange={(e)=>setB2(e.target.value)}/>
           </div> 
           <div className='value'>
-            {B2}
+            {comma(B2)}
           </div>
         </div>
         <div className='div'>
           <div className='text'>
-            Your MP amount (should be {Math.floor(MPSB())}):
+          {Eng ?  <div>Your MP (should be {Math.floor(MPSB())}):<input className="inputNumber" type="number" placeholder="1<x<5000" min="1" max="5000" value={C1}  
+            onChange={(e)=>{if(e.target.value<=5000 && e.target.value>=0)setC1(e.target.value)}}/></div> : <div>Mp miktarınız ({Math.floor(MPSB())} olmalı):<input className="inputNumber" type="number" placeholder="1<x<5000" min="1" max="5000" value={C1}  
+            onChange={(e)=>{if(e.target.value<=5000 && e.target.value>=0)setC1(e.target.value)}}/></div>}
+
           </div>
           <div  className='input'>
             <input type="range" min="0" max="5000" value={C1} className="slider" id="5" 
@@ -183,7 +207,9 @@ const MPSB = () =>{
         </div>
         <div className='div'>
           <div className='text'>
-            Total MP amount (should be {comma(Math.floor(TMPSB()))}):
+          {Eng ?  <div>Total MP (should be {comma(Math.floor(TMPSB()))}):<input className="inputNumber" type="number" placeholder="1<x<500000" min="1" max="500000" value={C2}  
+            onChange={(e)=>{if(e.target.value<=500000 && e.target.value>=0)setC2(e.target.value)}}/> </div> : <div>Toplam Mp ({comma(Math.floor(TMPSB()))} olmalı):<input className="inputNumber" type="number" placeholder="1<x<500000" min="1" max="500000" value={C2}  
+            onChange={(e)=>{if(e.target.value<=500000 && e.target.value>=0)setC2(e.target.value)}}/> </div>}
           </div>
           <div  className='input'>
             <input type="range" min="0" max="500000" value={C2} className="slider" id="6" 
@@ -195,7 +221,9 @@ const MPSB = () =>{
         </div>
         <div className='div'>
           <div className='text'>
-            How much HDX are you staking:
+          {Eng ? " How much HDX you staking:" : "Stake'deki HDX miktarınız:"}
+            <input className="inputNumber" type="number" placeholder="1<x<1000000" min="1" max="1000000" value={D1}  
+            onChange={(e)=>{if(e.target.value<=1000000 && e.target.value>=0)setD1(e.target.value)}}/> 
           </div>
           <div  className='input'>
             <input type="range" min="0" max="1000000" value={D1} className="slider" id="7" 
@@ -207,7 +235,9 @@ const MPSB = () =>{
         </div>
         <div className='div'>
           <div className='text'>
-            Total staked HDX amount:
+          {Eng ? "Total staked HDX amount:" : "Toplam stake deki HDX miktarı:"}
+            <input className="inputNumber" type="number" placeholder="1<x<100000000" min="1" max="100000000" value={D2}  
+            onChange={(e)=>{if(e.target.value<=100000000 && e.target.value>=0)setD2(e.target.value)}}/> 
           </div>
           <div  className='input'>
             <input type="range" min="1" max="100000000" value={D2} className="slider" id="8" 
@@ -218,22 +248,41 @@ const MPSB = () =>{
           </div>
         </div>
       </div>
+
       <div className='infos2'>
         <div className='infofirst'>
-          Total revenue (for {MA} month):
+        {Eng ?  <p>Total revenue (for {MA} month):</p> : <p>Toplam gelir ({MA} ay için)</p>}
           <div className='numbers'><p>${comma(YTR)}</p></div>
         </div>
         <div className='info'>
-          Daily revenue:
+        {Eng ? "Daily revenue:" : "Günlük gelir:"}
           <div className='numbers'><p>${comma(DR)}</p></div>
         </div>
         <div className='info'>
-          Montly revenue:
+        {Eng ? "Montly revenue:" : "Aylık gelir:"}
           <div className='numbers'><p>${comma(MR)}</p></div>
         </div>
         <div className='info'>
-          Yearly revenue:
+        {Eng ? "Yearly revenue:" : "Yıllık gelir:"}
           <div className='numbers'><p>${comma(YR)}</p></div>
+        </div>
+      </div>
+      <div className='infos2'>
+        <div className='infofirst'>
+        {Eng ?  <p>Your net worth (End of the {MA}. month):</p> : <p>Toplam varlığınız ({MA}. ayın sonunda):</p>}
+          <div className='numbers'><p>${comma(Math.floor(((15000*B1)+Number(D1))*P+YTR))}</p></div>
+        </div>
+        <div className='info'>
+        {Eng ?  <p>Your {B1} hnft worth ({15000*B1} hdx) :</p> : <p>{B1} adet HNFT değeri ({15000*B1} hdx) :</p>}
+          <div className='numbers'><p>${comma(Math.floor(15000*B1*P))}</p></div>
+        </div>
+        <div className='info'>
+        {Eng ?  <p>Your staked HDX worth ({D1}):</p> : <p>Stake'deki HDX'leriniz({D1}) :</p>}
+          <div className='numbers'><p>${comma(Math.floor(D1*P))}</p></div>
+        </div>
+        <div className='info'>
+        {Eng ?  <p>Your total HDX worth ({(15000*B1)+Number(D1)}):</p> : <p>Tüm HDX'lerinizin değeri({(15000*B1)+Number(D1)}) :</p>}
+          <div className='numbers'><p>${comma(Math.floor(((15000*B1)+Number(D1))*P))}</p></div>
         </div>
       </div>
     </div>
@@ -253,9 +302,10 @@ const MPSB = () =>{
   // C2: total MPs
   // D1: individual staked HDX
   // D2: total staked HDX
-  // E: individual fees
+  // E:  individual fees
   // DR: daily revenue
   // MR: monthly revenue
   // YR: yearly revenue
+
  
 export default App;

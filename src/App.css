@@ -1,9 +1,194 @@
+.App {
+  text-align: center;
+  font-size: 16px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight:700;
+}
+body{
+  background-color: rgb(198, 251, 233);
+}
+.header{
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  text-align: center;
+  font-size: 30px;
+  background-color: rgb(255, 255, 255);
+  width: 800px;
+  border-radius: 20px;
+  padding: 2px;
+  color:rgb(78, 11, 60);
+  height: 90px;
+  border: solid rgb(101, 99, 117) 12px;
+}
+
+.input{
+  background-color: #83a5c3;
+  width:410px;
+  height: 60px;
+  position: relative;
+  float: left;
+  padding: 10px;
+  border-radius: 20px;
+  border: red solid 1px;
+  margin-top: 3px;
+}
+.value{
+  border: 2px solid red;
+  background-color: aqua;
+  position: relative;
+  float: left;
+  padding: 10px;
+  width: 125px;
+  margin-left: 10px;
+  border-radius: 20px;
+  margin-top: 7px;
+  height: 50px;
+}
+.text{
+  border: 2px solid red;
+  background-color: aqua;
+  padding: 12px;
+  width: 400px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  border-radius: 20px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  text-align: left;
+}
+.div{
+  position: relative;
+  float: left;
+  margin-top: 8px;
+  margin-left: 100px;
+  border-radius: 20px;
+  
+}
+.infos1{
+  position: relative;
+  float: left;
+  margin-left: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.infos2{
+  position: relative;
+  float: left;
+  margin-left: 100px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+.bars{
+  position: relative;
+  float: left;
+  border-radius: 20px;
+}
+.info{
+  position: relative;
+  float: left;
+  background-color: #f17e7e;
+  border: 2px solid rgb(157, 32, 32);
+  padding: 10px;
+  width: 230px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  height: 100px;
+  border-radius: 20px;
+}
+.numbers{
+  width: 120px;
+  height: 25px;
+  background-color: rgb(255, 236, 198);
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  position: absolute;
+  bottom: 0;
+
+}
+.infofirst{
+  background-color: #e979cb;
+  position: relative;
+  float: left;
+  border: 2px solid rgb(167, 82, 82);
+  padding: 10px;
+  width: 230px;
+  position: relative;
+  float: left;
+  margin-right: 10px;
+  height: 100px;
+  border-radius: 20px;
+}
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+  width: 95%;
+
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  border: none;
+  height: 27px;
+  width: 27px;
+  background-color: transparent;
+  background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
+  background-position: 0 0;
+  background-size: cover;
+  transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+  cursor: pointer;
+  margin-top: -7px;
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 16px;
+  background: rgb(67, 104, 159);
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: 13px;
+}
+ 
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 99%; /* Full-width */
+  height: 10px; /* Specified height */
+  background: #2187e0; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+ .slider:hover {
+  opacity: 8; 
+}  
+.inputNumber{
+  width: 110px;
+  position: absolute;
+  right:0;
+  margin-right: 3px;
+  margin-top: -3px;
+  border-radius: 10px;
+}
+.button{
+  position: relative;
+
+}
+
 
 @media screen and (min-width: 3248px){
   
   .App {
     text-align: center;
-    font-size: 38px;
+    font-size: 45px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
   }
@@ -15,56 +200,58 @@
     margin-top: 30px;
     margin-left: 200px;
     text-align: center;
-    font-size: 45px;
+    font-size: 85px;
     background-color: rgb(255, 255, 255);
     width: 2500px;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 150px;
     border: solid rgb(101, 99, 117) 12px;
   }
  
   .input{
     background-color: #83a5c3;
-    width:1700px;
-    height: 80px;
+    width:1370px;
+    height: 100px;
     position: relative;
     float: left;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     border: red solid 1px;
     margin-top: 8px;
   }
   .value{
-    border: 2px solid red;
+    border: 3px solid red;
     background-color: aqua;
     position: relative;
     float: left;
     padding: 10px;
-    width: 300px;
+    width: 330px;
     margin-left: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: 7px;
+    height: 90px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 10px;
-    width: 800px;
+    padding: 17px;
+    width: 1100px;
     position: relative;
     float: left;
     margin-right: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     margin-top: px;
     margin-bottom: 2px;
+    height: 110px;
   }
   .div{
     position: relative;
     float: left;
     margin-top: 8px;
     margin-left: 100px;
-    border-radius: 20px;
+    border-radius: 30px;
     
   }
   .infos1{
@@ -73,19 +260,19 @@
     margin-left: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
   }
   .infos2{
     position: relative;
     float: left;
     margin-left: 100px;
     margin-top: 20px;
-    border-radius: 20px;
+    border-radius: 30px;
   }
   .bars{
     position: relative;
     float: left;
-    border-radius: 20px;
+    border-radius: 30px;
   }
   .info{
     position: relative;
@@ -97,15 +284,15 @@
     position: relative;
     float: left;
     margin-right: 10px;
-    height: 170px;
-    border-radius: 20px;
+    height: 250px;
+    border-radius: 30px;
   }
   .numbers{
-    width: 320px;
-    height: 55px;
+    width: 360px;
+    height: 60px;
     background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 170px;
+    border-radius: 30px;
+    margin-left: 150px;
     margin-bottom: 25px;
     position: absolute;
     bottom: 0;
@@ -121,8 +308,8 @@
     position: relative;
     float: left;
     margin-right: 10px;
-    height: 170px;
-    border-radius: 20px;
+    height: 250px;
+    border-radius: 30px;
   }
   input[type="range"] {
     -webkit-appearance: none;
@@ -133,8 +320,8 @@
   
   input[type="range"]::-webkit-slider-thumb {
     border: none;
-    height: 36px;
-    width: 36px;
+    height: 45px;
+    width: 45px;
     background-color: transparent;
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
@@ -149,7 +336,7 @@
     width: 100%;
     height: 26px;
     background: rgb(67, 104, 159);
-    border-radius: 10px;
+    border-radius: 20px;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: 1px;
@@ -170,6 +357,24 @@
    .slider:hover {
     opacity: 8; 
   }  
+  .inputNumber{
+    width: 250px;
+    position: absolute;
+    right:0;
+    margin-right: 9px;
+    margin-top: -3px;
+    border-radius: 20px;
+  }
+  .button{
+    position: relative;
+  
+  }
+  .btn-success{
+    font-size: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 300px;
+  }
 }
 @media screen and (min-width: 2049px) and (max-width: 3248px){
   
@@ -344,7 +549,7 @@
     opacity: 8; 
   }  
 }
-@media screen and (min-width: 1600px) and (max-width: 2048px){
+@media screen and (min-width: 1601px) and (max-width: 2048px){
   
   .App {
     text-align: center;
@@ -358,6 +563,7 @@
   .header{
     margin-bottom: 20px;
     margin-top: 30px;
+    margin-bottom: 50px;
     margin-left: 150px;
     text-align: center;
     font-size: 30px;
@@ -372,7 +578,7 @@
  
   .input{
     background-color: #83a5c3;
-    width:600px;
+    width:410px;
     height: 60px;
     position: relative;
     float: left;
@@ -391,18 +597,20 @@
     margin-left: 10px;
     border-radius: 20px;
     margin-top: 7px;
+    height: 50px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 10px;
-    width: 200px;
+    padding: 12px;
+    width: 400px;
     position: relative;
     float: left;
     margin-right: 10px;
     border-radius: 20px;
-    margin-top: px;
+    margin-top: 5px;
     margin-bottom: 2px;
+    text-align: left;
   }
   .div{
     position: relative;
@@ -512,10 +720,21 @@
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
   }
-  
    .slider:hover {
     opacity: 8; 
   }  
+  .inputNumber{
+    width: 110px;
+    position: absolute;
+    right:0;
+    margin-right: 3px;
+    margin-top: -3px;
+    border-radius: 10px;
+  }
+  .button{
+    position: relative;
+    margin-top: 35px;
+  }
 }
 @media screen and (min-width: 1201px) and (max-width: 1600px){
   
@@ -529,7 +748,7 @@
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     margin-top: 30px;
     margin-left: 200px;
     text-align: center;
@@ -545,7 +764,7 @@
  
   .input{
     background-color: #83a5c3;
-    width:700px;
+    width:500px;
     height: 60px;
     position: relative;
     float: left;
@@ -569,7 +788,7 @@
     border: 2px solid red;
     background-color: aqua;
     padding: 10px;
-    width: 200px;
+    width: 400px;
     position: relative;
     float: left;
     margin-right: 10px;
@@ -689,6 +908,18 @@
    .slider:hover {
     opacity: 8; 
   }  
+  .inputNumber{
+    width: 110px;
+    position: absolute;
+    right:0;
+    margin-right: 3px;
+    margin-top: -3px;
+    border-radius: 10px;
+  }
+  .button{
+    position: relative;
+    margin-top: 35px;
+  }
 }
 @media screen and (min-width: 990px) and (max-width: 1200px){
   
@@ -717,7 +948,7 @@
   }
   .input{
     background-color: #83a5c3;
-    width:600px;
+    width:400px;
     height: 60px;
     position: relative;
     float: left;
@@ -741,7 +972,7 @@
     border: 2px solid red;
     background-color: aqua;
     padding: 10px;
-    width: 200px;
+    width: 390px;
     position: relative;
     float: left;
     margin-right: 10px;
@@ -881,11 +1112,11 @@
     text-align: center;
     font-size: 30px;
     background-color: rgb(255, 255, 255);
-    width: 800px;
+    width: 690px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 130px;
     border: solid rgb(101, 99, 117) 12px;
   }
   
@@ -908,8 +1139,8 @@
   
   .input{
     background-color: #83a5c3;
-    width:435px;
-    height: 60px;
+    width:250px;
+    height: 50px;
     position: relative;
     float: left;
     padding: 10px;
@@ -926,19 +1157,20 @@
     width: 125px;
     margin-left: 10px;
     border-radius: 20px;
-    margin-top: 4px;
+    margin-top: 5px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 10px;
-    width: 150px;
+    padding: 8px;
+    width: 335px;
     position: relative;
     float: left;
-    margin-right: 10px;
+    margin-right: 5px;
     border-radius: 20px;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 2px;
+    height: 50px;
   }
   .div{
     position: relative;
@@ -977,7 +1209,7 @@
     position: relative;
     float: left;
     margin-right: 10px;
-    height: 130px;
+    height: 100px;
     border-radius: 20px;
   }
   .numbers{
@@ -987,7 +1219,7 @@
     border-radius: 20px;
     margin-left: 10px;
     margin-top: 1px;
-    margin-bottom: 10px;
+    margin-bottom: 6px;
     position: absolute;
     bottom: 0;
   }
@@ -1001,7 +1233,7 @@
     position: relative;
     float: left;
     margin-right: 10px;
-    height: 130px;
+    height: 100px;
     border-radius: 20px;
   }
   input[type="range"] {
@@ -1014,15 +1246,15 @@
   
   input[type="range"]::-webkit-slider-thumb {
     border: none;
-    height: 27px;
-    width: 27px;
+    height: 23px;
+    width: 23px;
     background-color: transparent;
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
     background-size: cover;
     transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
     cursor: pointer;
-    margin-top: -7px;
+    margin-top: -6px;
     -webkit-appearance: none;
   }
   
@@ -1033,7 +1265,16 @@
     border-radius: 10px;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: 13px;
+    margin-top: 6px;
+  }
+  .inputNumber{
+    width: 90px;
+    font-size: 13px;
+    margin-top: 1px;
+  }
+  .button{
+    position: relative;
+
   }
 }
 @media screen and (min-width: 479px) and (max-width: 767px){
@@ -1081,7 +1322,7 @@
   
   .input{
     background-color: #83a5c3;
-    width:195px;
+    width:165px;
     height: 20px;
     position: relative;
     float: left;
@@ -1100,12 +1341,13 @@
     margin-left: 2px;
     border-radius: 20px;
     margin-top: 2px;
+    height: 30px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
     padding: 8px;
-    width: 179px;
+    width: 200px;
     position: relative;
     float: left;
     margin-right: 2px;
@@ -1209,6 +1451,11 @@
     -webkit-appearance: none;
     margin-top: -9px;
   }
+  .inputNumber{
+    width: 55px;
+    font-size: 7px;
+
+  }
 }
 @media screen and (min-width: 425px) and (max-width: 479px){
   
@@ -1255,7 +1502,7 @@
 
   .input{
     background-color: #83a5c3;
-    width:225px;
+    width:200px;
     height: 10px;
     position: relative;
     float: left;
@@ -1270,23 +1517,24 @@
     position: relative;
     float: left;
     padding: 2.5px;
-    width: 45px;
+    width: 48px;
     margin-left: 2px;
     border-radius: 8px;
     margin-top: 3px;
+    height: 20px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 2px;
-    width: 130px;
+    padding: 4px;
+    width: 150px;
     position: relative;
     float: left;
     margin-right: 2px;
     border-radius: 15px;
-    margin-top: 4px;
-    margin-bottom: 2px;
-    height: 18px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    height: 21px;
   }
   .div{
     position: relative;
@@ -1321,7 +1569,7 @@
     position: relative;
     float: left;
     margin-right: 2px;
-    height:37px;
+    height:45px;
     border-radius: 15px;
   }
   .infofirst{
@@ -1342,6 +1590,7 @@
     margin-bottom: 7px;
     position: absolute;
     bottom: 0;
+    height: 10px;
   }
 
   input[type="range"] {
@@ -1354,15 +1603,15 @@
   
   input[type="range"]::-webkit-slider-thumb {
     border: none;
-    height: 8px;
-    width: 8px;
+    height: 9px;
+    width: 9px;
     background-color: transparent;
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
     background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+    
     cursor: pointer;
-    margin-top: -3px;
+    margin-top: -2px;
     -webkit-appearance: none;
   }
   
@@ -1374,6 +1623,16 @@
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -9px;
+  }
+  .inputNumber{
+    font-size: 5px;
+    width: 48px;
+    margin-top: -2px;
+  }
+  .btn-success{
+    font-size: 10px;
+    margin-top: -15px;
+    margin-left: -40px
   }
 }
 
@@ -1394,13 +1653,13 @@
     margin-top: 10px;
     text-align: center;
     margin-left: 10px;
-    font-size: 20px;
+    font-size: 13px;
     background-color: rgb(255, 255, 255);
-    width: 294px;
+    width: 300px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 15%;
     border: solid rgb(101, 99, 117) 12px;
   }
   
@@ -1422,7 +1681,7 @@
 
   .input{
     background-color: #83a5c3;
-    width:125px;
+    width:118px;
     height: 10px;
     position: relative;
     float: left;
@@ -1437,23 +1696,24 @@
     position: relative;
     float: left;
     padding: 2.5px;
-    width: 45px;
+    width: 48px;
     margin-left: 2px;
     border-radius: 8px;
     margin-top: 3px;
+    height: 20px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 2px;
-    width: 120px;
+    padding: 4px;
+    width: 150px;
     position: relative;
     float: left;
     margin-right: 2px;
     border-radius: 15px;
-    margin-top: 4px;
-    margin-bottom: 2px;
-    height: 18px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    height: 21px;
   }
   .div{
     position: relative;
@@ -1483,8 +1743,8 @@
     float: left;
     background-color: #fe8b84;
     border: 2px solid rgb(148, 18, 18);
-    padding: 6px;
-    width: 73px;
+    padding: 4px;
+    width: 80px;
     position: relative;
     float: left;
     margin-right: 2px;
@@ -1504,11 +1764,12 @@
     height: 10px;
     background-color: rgb(255, 236, 198);
     border-radius: 15px;
-    margin-left: 4px;
+    margin-left: 9px;
     margin-top: 2px;
-    margin-bottom: 3px;
+    margin-bottom: 4px;
     position: absolute;
     bottom: 0;
+    height: 10px;
   }
 
   input[type="range"] {
@@ -1521,15 +1782,15 @@
   
   input[type="range"]::-webkit-slider-thumb {
     border: none;
-    height: 8px;
-    width: 8px;
+    height: 9px;
+    width: 9px;
     background-color: transparent;
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
     background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
+    
     cursor: pointer;
-    margin-top: -3px;
+    margin-top: -2px;
     -webkit-appearance: none;
   }
   
@@ -1541,5 +1802,15 @@
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -9px;
+  }
+  .inputNumber{
+    font-size: 5px;
+    width: 48px;
+    margin-top: -2px;
+  }
+  .btn-success{
+    font-size: 10px;
+    margin-top: -15px;
+    margin-left: -40px
   }
 }
