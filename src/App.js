@@ -2,7 +2,7 @@ import './App.css';
 import { hasPointerEvents } from '@testing-library/user-event/dist/utils';
 import bootstrap from 'bootstrap'
 import react, {useEffect, useState} from "react"; 
-import {ethers} from "ethers";
+import {BigNumber, ethers} from "ethers";
 import { HDX_ABI } from './info/abi.js';
 import { ADDRESS } from './info/address.js';
 
@@ -42,6 +42,21 @@ function App() {
   const [D2, setD2] = useState(1);
   const [Eng, setEng] = useState(true);
   
+  const [totalHdx, setTotalHdx] = useState(BigNumber.from(0).toString());
+ 
+  useEffect(()=>{
+    const provider = new ethers.providers.AlchemyProvider( "arbitrum" , "h4bsS1_3SZC0JOou9tz3xgg-fvrnG5-U" );
+    const _HdxToken = new ethers.Contract(ADDRESS,HDX_ABI,provider);
+    _HdxToken.totalSupply()
+    .then( (e) => setTotalHdx(e));
+    
+  },[]);
+  
+  
+  // const _totalHdx = async () => {
+  //   const hdx = await contractHdx.totalSupply();
+  //   setTotalHdx(hdx);
+  // } 
 
   
 const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000) ;
@@ -100,7 +115,7 @@ const changeLange = () =>{
     <div className="App">
       <div className='bars'>
         <div className='Navbar'>
-
+        {BigNumber.from(totalHdx).toString()}
         </div>
         <div className="header">
           <p>{Eng ? "HDX DEX Fee Distribution Calculator Application" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
@@ -143,7 +158,7 @@ const changeLange = () =>{
         <div className='div'>
           <div className='text'>
           {Eng ? "Daily DEX volume:" : "Günlük DEX hacmi:"}
-            <input className="inputNumber" type="number" placeholder=" 1<x<500000000" min="1" max="500000000" value={DDV}  
+            <input className="inputNumber" type="number" placeholder=" 1<x<500000000" min="1" max="500000000" value={DDV}
             onChange={(e)=>{if(e.target.value<=500000000 && e.target.value>=0)setDDV(e.target.value)}}/> 
           </div>
           <div  className='input'>
