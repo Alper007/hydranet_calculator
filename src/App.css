@@ -560,6 +560,13 @@ input[type="range"]::-webkit-slider-runnable-track {
   body{
     background-color: rgb(198, 251, 233);
   }
+  .Navbar{
+    width: 900px;
+    height: 100px;
+    background-color: #d084f9;
+    margin-left: 200px;
+    margin-top: 40px;
+  }
   .header{
     margin-bottom: 20px;
     margin-top: 30px;
