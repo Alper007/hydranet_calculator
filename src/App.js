@@ -3,8 +3,8 @@ import { hasPointerEvents } from '@testing-library/user-event/dist/utils';
 import bootstrap from 'bootstrap'
 import react, {useEffect, useState} from "react"; 
 import {ethers} from "ethers";
-import { HDX_ABI } from './info/abi';
-import { ADDRESS } from './info/address';
+import { HDX_ABI } from './info/abi.js';
+import { ADDRESS } from './info/address.js';
 
 
 function App() {
@@ -41,20 +41,7 @@ function App() {
   const [D1, setD1] = useState(0);
   const [D2, setD2] = useState(1);
   const [Eng, setEng] = useState(true);
-  const [contractHdx, setContractHdx] = useState("");
-  const [totalHdx, setTotalHdx] = useState("");
- 
-  useEffect(()=>{
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-    // const signer = provider.getSigner();
-    const _HdxToken = new ethers.Contract(HDX_ABI,ADDRESS,provider);
-    setContractHdx(_HdxToken);
-  });
   
-  const _totalHdx = async () => {
-    const hdx = await contractHdx.totalSupply();
-    console.log(hdx);
-  } 
 
   
 const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000) ;
@@ -113,8 +100,7 @@ const changeLange = () =>{
     <div className="App">
       <div className='bars'>
         <div className='Navbar'>
-          {totalHdx}
-          <button onClick={_totalHdx}></button>
+
         </div>
         <div className="header">
           <p>{Eng ? "HDX DEX Fee Distribution Calculator Application" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
@@ -161,11 +147,11 @@ const changeLange = () =>{
             onChange={(e)=>{if(e.target.value<=500000000 && e.target.value>=0)setDDV(e.target.value)}}/> 
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="500000001" value={DDV} className="slider" id="2" step="100000"
+            <input type="range" min="0" max="500000000" value={DDV} className="slider" id="2" step="100000"
             onChange={(e)=>setDDV(e.target.value)}/>  
           </div> 
           <div className='value'>
-            ${comma(DDV-1)}
+            ${comma(DDV)}
           </div>
         </div>
         <div className='div'>
