@@ -3,6 +3,7 @@
   font-size: 16px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight:700;
+  position: center;
 }
 body{
   background-color: rgb(198, 251, 233);
@@ -22,7 +23,34 @@ body{
   height: 90px;
   border: solid rgb(101, 99, 117) 12px;
 }
-
+.Navbar{
+  width: 880px;
+  height: 110px;
+  background-color: #d084f9;
+  margin-left: 15px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.nav{
+  background-color: aliceblue;
+  width: 20px;
+  height: 30px;
+}
+.biginput{
+  width: 750px;
+  height: 40px;
+  text-align: center;
+  position: relative;
+  float: left;
+  margin-left: 15%;
+  margin-top: 7px;
+}
+.biginputbuton{
+  position: relative;
+  float: left;
+  margin-left: 30px;
+  font-size:22px
+}
 .input{
   background-color: #83a5c3;
   width:410px;
@@ -58,6 +86,7 @@ body{
   margin-top: 5px;
   margin-bottom: 2px;
   text-align: left;
+  height: 70px;
 }
 .div{
   position: relative;
@@ -68,7 +97,7 @@ body{
   
 }
 .infos1{
-  position: relative;
+  position: absolute;
   float: left;
   margin-left: 100px;
   margin-top: 10px;
@@ -200,20 +229,64 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-top: 30px;
     margin-left: 200px;
     text-align: center;
-    font-size: 85px;
+    font-size: 100px;
     background-color: rgb(255, 255, 255);
     width: 2500px;
     border-radius: 30px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 150px;
+    height: 200px;
     border: solid rgb(101, 99, 117) 12px;
+  }
+  .Navbar{
+    width: 3000px;
+    height: 150px;
+    background-color: #c58c2a;
+    margin-left: 15px;
+    margin-top: 20px;
+    padding: 20px;
+    padding: 30px;
+  }
+  .Navbar{
+    width: 2800px;
+    border-radius: 30px;
+    margin-left: 120px;
+  }
+  .nav{
+    width: 700px;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    padding: 7px;
+    font-size: 50px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 2600px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 120px;
+    border-radius: 30px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:60px;
+    border-radius: 10px;
+    margin-top: 2px;
+    height:97px;
   }
  
   .input{
     background-color: #83a5c3;
     width:1370px;
-    height: 100px;
+    height: 110px;
     position: relative;
     float: left;
     padding: 10px;
@@ -371,9 +444,10 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   .btn-success{
     font-size: 50px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 20px;
-    margin-right: 300px;
+    margin-right: 200px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 2049px) and (max-width: 3248px){
@@ -400,6 +474,54 @@ input[type="range"]::-webkit-slider-runnable-track {
     color:rgb(78, 11, 60);
     height: 90px;
     border: solid rgb(101, 99, 117) 12px;
+  }
+  .Navbar{
+    width: 1800px;
+    height: 150px;
+    background-color: #c58c2a;
+    margin-left: 120px;
+    margin-top: 20px;
+    padding: 20px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 450px;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    padding: 7px;
+    font-size: 30px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 1500px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 120px;
+    border-radius: 30px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:30px;
+    border-radius: 10px;
+    margin-top: 2px;
+    height:57px;
+  }
+  .btn-success{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 40px;
   }
  
   .input{
@@ -549,44 +671,86 @@ input[type="range"]::-webkit-slider-runnable-track {
     opacity: 8; 
   }  
 }
-@media screen and (min-width: 1601px) and (max-width: 2048px){
+@media screen and (min-width: 1600px) and (max-width: 2048px){
   
   .App {
     text-align: center;
-    font-size: 16px;
+    font-size: 25px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
+    margin-left: 100px;
   }
   body{
     background-color: rgb(198, 251, 233);
   }
-  .Navbar{
-    width: 900px;
-    height: 100px;
-    background-color: #d084f9;
-    margin-left: 200px;
-    margin-top: 40px;
-  }
   .header{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    margin-left: 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 120px;
     text-align: center;
     font-size: 30px;
     background-color: rgb(255, 255, 255);
-    width: 800px;
+    width: 1100px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
     height: 90px;
     border: solid rgb(101, 99, 117) 12px;
   }
+  .Navbar{
+    width: 1400px;
+    height: 150px;
+    background-color: #c58c2a;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 20px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 330px;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    padding: 7px;
+    font-size: 30px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 1250px;
+    height: 80px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 0px;
+    border-radius: 30px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    font-size:45px;
+    border-radius: 10px;
+    margin-top: 13px;
+    height: 70px;
+
+  }
+  .btn-success{
+    font-size: 35px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
  
   .input{
     background-color: #83a5c3;
-    width:410px;
-    height: 60px;
+    width:600px;
+    height: 80px;
     position: relative;
     float: left;
     padding: 10px;
@@ -600,69 +764,63 @@ input[type="range"]::-webkit-slider-runnable-track {
     position: relative;
     float: left;
     padding: 10px;
-    width: 125px;
+    width: 200px;
     margin-left: 10px;
     border-radius: 20px;
     margin-top: 7px;
-    height: 50px;
+    height: 60px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 12px;
-    width: 400px;
+    padding: 10px;
+    width: 550px;
     position: relative;
     float: left;
     margin-right: 10px;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-top: px;
     margin-bottom: 2px;
-    text-align: left;
   }
   .div{
     position: relative;
     float: left;
     margin-top: 8px;
-    margin-left: 100px;
+    margin-left: 000px;
     border-radius: 20px;
     
   }
-  .infos1{
+  .infos1,.infos2{
     position: relative;
     float: left;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border-radius: 20px;
-  }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 20px;
-    border-radius: 20px;
   }
   .bars{
     position: relative;
     float: left;
     border-radius: 20px;
   }
-  .info{
+  .info,.infofirst{
     position: relative;
     float: left;
     background-color: #f17e7e;
     border: 2px solid rgb(157, 32, 32);
     padding: 10px;
-    width: 230px;
+    width: 340px;
     position: relative;
     float: left;
     margin-right: 10px;
-    height: 100px;
+    height: 140px;
     border-radius: 20px;
   }
+  .infofirst{
+    background-color: #e979cb;
+  }
   .numbers{
-    width: 120px;
-    height: 25px;
+    width: 220px;
+    height: 40px;
     background-color: rgb(255, 236, 198);
     border-radius: 20px;
     margin-left: 40px;
@@ -671,19 +829,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     bottom: 0;
 
   }
-  .infofirst{
-    background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 10px;
-    width: 230px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
-  }
+
   input[type="range"] {
     -webkit-appearance: none;
     background: transparent;
@@ -694,8 +840,8 @@ input[type="range"]::-webkit-slider-runnable-track {
   
   input[type="range"]::-webkit-slider-thumb {
     border: none;
-    height: 27px;
-    width: 27px;
+    height: 36px;
+    width: 36px;
     background-color: transparent;
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
@@ -727,27 +873,25 @@ input[type="range"]::-webkit-slider-runnable-track {
     -webkit-transition: .2s; /* 0.2 seconds transition on hover */
     transition: opacity .2s;
   }
+  
    .slider:hover {
     opacity: 8; 
   }  
   .inputNumber{
-    width: 110px;
+    width: 150px;
     position: absolute;
     right:0;
     margin-right: 3px;
     margin-top: -3px;
     border-radius: 10px;
   }
-  .button{
-    position: relative;
-    margin-top: 35px;
-  }
+
 }
 @media screen and (min-width: 1201px) and (max-width: 1600px){
   
   .App {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
   }
@@ -755,8 +899,8 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 50px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     margin-left: 200px;
     text-align: center;
     font-size: 30px;
@@ -767,6 +911,55 @@ input[type="range"]::-webkit-slider-runnable-track {
     color:rgb(78, 11, 60);
     height: 90px;
     border: solid rgb(101, 99, 117) 12px;
+  }
+  .Navbar{
+    width: 1050px;
+    height: 150px;
+    background-color: #c58c2a;
+    margin-left: 100px;
+    margin-top: 20px;
+    padding: 20px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 240px;
+    height: 90px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    padding: 7px;
+    font-size: 25px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 920px;
+    height: 60px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 100px;
+    border-radius: 30px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:35px;
+    border-radius: 10px;
+    margin-top: 9px;
+    height:52px;
+
+  }
+  .btn-success{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 10px;
   }
  
   .input{
@@ -802,6 +995,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 20px;
     margin-top: px;
     margin-bottom: 2px;
+    height:55px;
   }
   .div{
     position: relative;
@@ -845,7 +1039,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 20px;
   }
   .numbers{
-    width: 120px;
+    width: 140px;
     height: 25px;
     background-color: rgb(255, 236, 198);
     border-radius: 20px;
@@ -923,10 +1117,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-top: -3px;
     border-radius: 10px;
   }
-  .button{
-    position: relative;
-    margin-top: 35px;
-  }
+
 }
 @media screen and (min-width: 990px) and (max-width: 1200px){
   
@@ -935,24 +1126,75 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-size: 16px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
+    margin-left: 20px;
   }
   body{
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    margin-left: 80px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 90px;
     text-align: center;
-    font-size: 30px;
+    font-size: 27px;
     background-color: rgb(255, 255, 255);
-    width: 800px;
+    width: 700px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
     height: 90px;
     border: solid rgb(101, 99, 117) 12px;
   }
+  .Navbar{
+    width: 900px;
+    height: 120px;
+    background-color: #c58c2a;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 8px;
+    padding: 30px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 200px;
+    height: 70px;
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    padding: 7px;
+    font-size: 20px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 840px;
+    height: 45px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 0px;
+    border-radius: 30px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:25px;
+    border-radius: 10px;
+    margin-top: 7px;
+    height:42px;
+
+  }
+  .btn-success{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+ 
   .input{
     background-color: #83a5c3;
     width:400px;
@@ -979,26 +1221,27 @@ input[type="range"]::-webkit-slider-runnable-track {
     border: 2px solid red;
     background-color: aqua;
     padding: 10px;
-    width: 390px;
+    width: 380px;
     position: relative;
     float: left;
     margin-right: 10px;
     border-radius: 20px;
     margin-top: px;
     margin-bottom: 2px;
+    height: 50px;
   }
   .div{
     position: relative;
     float: left;
     margin-top: 8px;
-    margin-left: 20px;
+    margin-left: 0px;
     border-radius: 20px;
     
   }
   .infos1{
     position: relative;
     float: left;
-    margin-left: 20px;
+    margin-left: 00px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -1006,7 +1249,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   .infos2{
     position: relative;
     float: left;
-    margin-left: 20px;
+    margin-left: 00px;
     margin-top: 20px;
     border-radius: 20px;
   }
@@ -1015,13 +1258,13 @@ input[type="range"]::-webkit-slider-runnable-track {
     float: left;
     border-radius: 20px;
   }
-  .info{
+  .info, .infofirst{
     position: relative;
     float: left;
     background-color: #f17e7e;
     border: 2px solid rgb(157, 32, 32);
     padding: 10px;
-    width: 227px;
+    width: 220px;
     position: relative;
     float: left;
     margin-right: 10px;
@@ -1041,16 +1284,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   .infofirst{
     background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 10px;
-    width: 230px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
+
   }
   input[type="range"] {
     -webkit-appearance: none;
@@ -1099,61 +1333,102 @@ input[type="range"]::-webkit-slider-runnable-track {
    .slider:hover {
     opacity: 8; 
   }  
+  .inputNumber{
+    width: 110px;
+    position: absolute;
+    right:0;
+    margin-right: 3px;
+    margin-top: -3px;
+    border-radius: 10px;
+  }
 
 }
 @media screen and (min-width: 767px) and (max-width: 990px){
   
   .App {
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
+    margin-left: 20px;
   }
   body{
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 90px;
     text-align: center;
-    font-size: 30px;
+    font-size: 23px;
     background-color: rgb(255, 255, 255);
-    width: 690px;
+    width: 550px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 130px;
+    height: 70px;
     border: solid rgb(101, 99, 117) 12px;
   }
-  
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
+  .Navbar{
+    width: 720px;
+    height: 120px;
+    background-color: #c58c2a;
+    margin-left: 0px;
+    margin-top: 20px;
+    padding: 8px;
+    padding: 30px;
+    border-radius: 30px;
   }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  
-  
+
+  .nav{
+    width: 150px;
+    height: 70px;
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    padding: 7px;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 600px;
+    height: 45px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 0px;
+    border-radius: 30px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:25px;
+    border-radius: 10px;
+    margin-top: 7px;
+    height:42px;
+
+  }
+  .btn-success{
+    font-size: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+ 
   .input{
     background-color: #83a5c3;
-    width:250px;
-    height: 50px;
+    width:270px;
+    height: 60px;
     position: relative;
     float: left;
     padding: 10px;
     border-radius: 20px;
     border: red solid 1px;
-    margin-top: 6px;
+    margin-top: 3px;
   }
   .value{
     border: 2px solid red;
@@ -1164,18 +1439,18 @@ input[type="range"]::-webkit-slider-runnable-track {
     width: 125px;
     margin-left: 10px;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-top: 7px;
   }
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 8px;
-    width: 335px;
+    padding: 10px;
+    width: 300px;
     position: relative;
     float: left;
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 20px;
-    margin-top: 5px;
+    margin-top: px;
     margin-bottom: 2px;
     height: 50px;
   }
@@ -1183,13 +1458,14 @@ input[type="range"]::-webkit-slider-runnable-track {
     position: relative;
     float: left;
     margin-top: 8px;
-    margin-left: 10px;
+    margin-left: 0px;
     border-radius: 20px;
+    
   }
   .infos1{
     position: relative;
     float: left;
-    margin-left: 10px;
+    margin-left: 00px;
     margin-top: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
@@ -1197,7 +1473,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   .infos2{
     position: relative;
     float: left;
-    margin-left: 10px;
+    margin-left: 00px;
     margin-top: 20px;
     border-radius: 20px;
   }
@@ -1206,13 +1482,13 @@ input[type="range"]::-webkit-slider-runnable-track {
     float: left;
     border-radius: 20px;
   }
-  .info{
+  .info, .infofirst{
     position: relative;
     float: left;
     background-color: #f17e7e;
     border: 2px solid rgb(157, 32, 32);
-    padding: 10px;
-    width: 175px;
+    padding: 6px;
+    width: 170px;
     position: relative;
     float: left;
     margin-right: 10px;
@@ -1224,24 +1500,15 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 25px;
     background-color: rgb(255, 236, 198);
     border-radius: 20px;
-    margin-left: 10px;
-    margin-top: 1px;
-    margin-bottom: 6px;
+    margin-left: 20px;
+    margin-bottom: 10px;
     position: absolute;
     bottom: 0;
+
   }
   .infofirst{
     background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 10px;
-    width: 175px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
+
   }
   input[type="range"] {
     -webkit-appearance: none;
@@ -1253,15 +1520,15 @@ input[type="range"]::-webkit-slider-runnable-track {
   
   input[type="range"]::-webkit-slider-thumb {
     border: none;
-    height: 23px;
-    width: 23px;
+    height: 27px;
+    width: 27px;
     background-color: transparent;
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
     background-size: cover;
     transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
     cursor: pointer;
-    margin-top: -6px;
+    margin-top: -7px;
     -webkit-appearance: none;
   }
   
@@ -1272,17 +1539,33 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 10px;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: 6px;
+    margin-top: 13px;
   }
+   
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 99%; /* Full-width */
+    height: 10px; /* Specified height */
+    background: #2187e0; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+   .slider:hover {
+    opacity: 8; 
+  }  
   .inputNumber{
-    width: 90px;
-    font-size: 13px;
-    margin-top: 1px;
+    width: 110px;
+    position: absolute;
+    right:0;
+    margin-right: 3px;
+    margin-top: -0px;
+    border-radius: 10px;
   }
-  .button{
-    position: relative;
 
-  }
 }
 @media screen and (min-width: 479px) and (max-width: 767px){
   
@@ -1291,25 +1574,73 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-size: 9px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight:700;
+  
   }
   body{
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
     text-align: center;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    width: 450px;
+    width: 440px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
     height: 90px;
     border: solid rgb(101, 99, 117) 12px;
   }
-  
+  .Navbar{
+    width: 445px;
+    height: 90px;
+    background-color: #c58c2a;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 13px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 110px;
+    height: 65px;
+    position: relative;
+    float: left;
+    margin-left: 4px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 390px;
+    height: 26px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 13px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:12px;
+    border-radius: 10px;
+    margin-top: 5px;
+    height:27px;
+  }
+  .btn-success{
+    font-size: 11px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 4px;
+  }
+ 
   .slider {
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
@@ -1329,7 +1660,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   
   .input{
     background-color: #83a5c3;
-    width:165px;
+    width:170px;
     height: 20px;
     position: relative;
     float: left;
@@ -1344,7 +1675,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     position: relative;
     float: left;
     padding: 7px;
-    width: 75px;
+    width: 70px;
     margin-left: 2px;
     border-radius: 20px;
     margin-top: 2px;
@@ -1353,14 +1684,15 @@ input[type="range"]::-webkit-slider-runnable-track {
   .text{
     border: 2px solid red;
     background-color: aqua;
-    padding: 8px;
+    padding: 4px;
     width: 200px;
     position: relative;
     float: left;
     margin-right: 2px;
     border-radius: 20px;
-    margin-top: 1px;
+    margin-top: 3px;
     margin-bottom: 2px;
+    height: 26px;
   }
   .div{
     position: relative;
@@ -1396,7 +1728,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-color: #f17e7e;
     border: 2px solid rgb(157, 32, 32);
     padding: 6px;
-    width: 110px;
+    width: 105px;
     position: relative;
     float: left;
     margin-right: 5px;
@@ -1460,7 +1792,9 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   .inputNumber{
     width: 55px;
-    font-size: 7px;
+    font-size: 6px;
+    margin-left: 5px;
+    margin-top: 1px;
 
   }
 }
@@ -1473,6 +1807,54 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-weight:700;
 
   }
+  .Navbar{
+    width: 400px;
+    height: 90px;
+    background-color: #c58c2a;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 13px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 90px;
+    height: 65px;
+    position: relative;
+    float: left;
+    margin-left: 4px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 350px;
+    height: 22px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 13px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:10px;
+    border-radius: 10px;
+    height:23px;
+    margin-top: 5px;
+  }
+  .btn-success{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 1px;
+  }
   body{
     background-color: rgb(161, 255, 224);
   }
@@ -1483,7 +1865,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-left: 10px;
     font-size: 20px;
     background-color: rgb(255, 255, 255);
-    width: 410px;
+    width: 400px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
@@ -1509,7 +1891,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   .input{
     background-color: #83a5c3;
-    width:200px;
+    width:196px;
     height: 10px;
     position: relative;
     float: left;
@@ -1572,7 +1954,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-color: #fe8b84;
     border: 2px solid rgb(148, 18, 18);
     padding: 4px;
-    width: 100px;
+    width: 98px;
     position: relative;
     float: left;
     margin-right: 2px;
@@ -1636,11 +2018,6 @@ input[type="range"]::-webkit-slider-runnable-track {
     width: 48px;
     margin-top: -2px;
   }
-  .btn-success{
-    font-size: 10px;
-    margin-top: -15px;
-    margin-left: -40px
-  }
 }
 
 @media screen and (max-width: 425px){
@@ -1652,6 +2029,54 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-weight:700;
 
   }
+  .Navbar{
+    width: 400px;
+    height: 90px;
+    background-color: #c58c2a;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 13px;
+    border-radius: 30px;
+  }
+
+  .nav{
+    width: 90px;
+    height: 65px;
+    position: relative;
+    float: left;
+    margin-left: 4px;
+    padding: 5px;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 20px;
+  }
+  .biginput{
+    width: 350px;
+    height: 22px;
+    text-align: center;
+    position: relative;
+    float: left;
+    margin-left: 13px;
+    border-radius: 10px;
+    margin-bottom: 4px;
+    margin-top: 5px;
+  }
+  .biginputbuton{
+    position: relative;
+    float: left;
+    margin-left: 5px;
+    font-size:10px;
+    border-radius: 10px;
+    height:23px;
+    margin-top: 5px;
+  }
+  .btn-success{
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 1px;
+  }
   body{
     background-color: rgb(161, 255, 224);
   }
@@ -1660,13 +2085,13 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-top: 10px;
     text-align: center;
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 20px;
     background-color: rgb(255, 255, 255);
-    width: 300px;
+    width: 400px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 15%;
+    height: 90px;
     border: solid rgb(101, 99, 117) 12px;
   }
   
@@ -1688,7 +2113,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   .input{
     background-color: #83a5c3;
-    width:118px;
+    width:196px;
     height: 10px;
     position: relative;
     float: left;
@@ -1751,7 +2176,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-color: #fe8b84;
     border: 2px solid rgb(148, 18, 18);
     padding: 4px;
-    width: 80px;
+    width: 98px;
     position: relative;
     float: left;
     margin-right: 2px;
@@ -1771,9 +2196,9 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 10px;
     background-color: rgb(255, 236, 198);
     border-radius: 15px;
-    margin-left: 9px;
+    margin-left: 17px;
     margin-top: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
     position: absolute;
     bottom: 0;
     height: 10px;
@@ -1814,10 +2239,5 @@ input[type="range"]::-webkit-slider-runnable-track {
     font-size: 5px;
     width: 48px;
     margin-top: -2px;
-  }
-  .btn-success{
-    font-size: 10px;
-    margin-top: -15px;
-    margin-left: -40px
   }
 }

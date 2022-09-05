@@ -1,10 +1,10 @@
 import './App.css';
-import { hasPointerEvents } from '@testing-library/user-event/dist/utils';
+import { hasPointerEvents, wait } from '@testing-library/user-event/dist/utils';
 import bootstrap from 'bootstrap'
 import react, {useEffect, useState} from "react"; 
 import {BigNumber, ethers} from "ethers";
-import { HDX_ABI } from './info/abi.js';
-import { ADDRESS } from './info/address.js';
+import { HDX_ABI, SHDX_ABI } from './info/abi.js';
+import { ADDRESS, SHDXADDRESS } from './info/address.js';
 
 
 function App() {
@@ -31,35 +31,47 @@ function App() {
   // MPSB: mp should be
   // TMPSH: total mp should be
 
-  const [DDV, setDDV] = useState(1);
-  const [P, setP] = useState(1);
-  const [MA, setMA] = useState(1);
-  const [B1, setB1] = useState(1);
-  const [B2, setB2] = useState(0);
-  const [C1, setC1] = useState(0);
-  const [C2, setC2] = useState(0);
-  const [D1, setD1] = useState(0);
-  const [D2, setD2] = useState(1);
-  const [Eng, setEng] = useState(true);
+  const [DDV, setDDV] =useState(1);
+  const [P, setP] =    useState(1);
+  const [MA, setMA] =  useState(1);
+  const [B1, setB1] =  useState(1);
+  const [B2, setB2] =  useState(1);
+  const [C1, setC1] =  useState(1);
+  const [C2, setC2] =  useState(1);
+  const [D1, setD1] =  useState(1);
+  const [D2, setD2] =  useState(1);
   
+  const [Eng, setEng] = useState(true);
   const [totalHdx, setTotalHdx] = useState(BigNumber.from(0).toString());
- 
+  const [stakedHdx, setStakedHdx] = useState(BigNumber.from(0).toString());
+  
+  const [shdxAmount, setShdxAmount] = useState(BigNumber.from(0).toString());
+  const [address, setAddress] = useState("");
+
+  const provider = new ethers.providers.AlchemyProvider( "arbitrum" , "h4bsS1_3SZC0JOou9tz3xgg-fvrnG5-U" );
+  const _HdxToken = new ethers.Contract(ADDRESS,HDX_ABI,provider);
+  const _ShdxToken = new ethers.Contract(SHDXADDRESS, SHDX_ABI,provider);
+
   useEffect(()=>{
-    const provider = new ethers.providers.AlchemyProvider( "arbitrum" , "h4bsS1_3SZC0JOou9tz3xgg-fvrnG5-U" );
-    const _HdxToken = new ethers.Contract(ADDRESS,HDX_ABI,provider);
     _HdxToken.totalSupply()
     .then( (e) => setTotalHdx(e));
-    
-  },[]);
+    _HdxToken.balanceOf("0xd20cdf95a08acdf8aa360232caeda6e59a06951d")
+    .then( (a)=> setStakedHdx(a));
+    setD2(BigNumber.from(stakedHdx).toString().slice(0,-9));
+    setD1(BigNumber.from(shdxAmount).toString().slice(0,-9));
+  },[shdxAmount]);
   
-  
-  // const _totalHdx = async () => {
-  //   const hdx = await contractHdx.totalSupply();
-  //   setTotalHdx(hdx);
-  // } 
+  const fill = async () =>  {
+    try{
+      const a = await _ShdxToken.balanceOf(address.trim()); 
+      setShdxAmount(a);
+    }catch{
+      alert("Please type a valid address")
+    }
+  }
 
   
-const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000) ;
+const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000);
 const TSF = Math.floor(TDF*35/100);
 const TPF = Math.floor(TDF*60/100);
 const TTF = Math.floor(TDF*5/100);
@@ -110,19 +122,30 @@ const changeLange = () =>{
     return y;
 }
 
- 
   return (
     <div className="App">
       <div className='bars'>
         <div className='Navbar'>
-        {BigNumber.from(totalHdx).toString()}
+          <div className='nav'>
+            Total Supply: 
+            <p>{comma(BigNumber.from(totalHdx).toString().slice(0,-9))} </p>
+          </div>
+          <div className='nav'>
+            Staked HDX: 
+            <p> {comma(BigNumber.from(stakedHdx).toString().slice(0,-9))} </p>
+          </div>
+          <div className='nav'>
+            Staked HDX Ratio:
+            <p>{(BigNumber.from(stakedHdx).toString().slice(0,-9)/BigNumber.from(totalHdx).toString().slice(0,-9)*100).toString().slice(0,-12)}%</p>
+          </div>
+          <div className='button'>
+          <button className="btn btn-success" onClick={changeLange}>{Eng ? "TURKISH" : "ENGLISH"}</button>
+        </div>
         </div>
         <div className="header">
           <p>{Eng ? "HDX DEX Fee Distribution Calculator Application" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
         </div>
-        <div className='button'>
-          <button className="btn btn-success" onClick={changeLange}>{Eng ? "TURKISH" : "ENGLISH"}</button>
-        </div>
+        
         <div className='infos1'>
           <div className='infofirst'>
            {Eng ? <p>Total deducted fee (for {MA} month):</p> : <p>Toplam kesilen fee ({MA} ay için)</p>}
@@ -141,6 +164,15 @@ const changeLange = () =>{
             <div className='numbers'><p>${comma(TTF)}</p></div>
           </div>
       </div>
+        <div>
+          <div>
+            <input  className="biginput" value={address} 
+              onChange={
+                  (e)=> setAddress(e.target.value)} 
+              type="text" placeholder="Type your address to fill variables automatically"/>
+          </div>
+          <div><button className="biginputbuton" onClick={fill}>Click</button></div>
+        </div>
         <div className='div'>
           <div className='text'>
           {Eng ? "HNFTs locking duration(month):" : "HNFT kitleme süresi (Ay):"}
@@ -163,8 +195,8 @@ const changeLange = () =>{
           </div>
           <div  className='input'>
             <input type="range" min="0" max="500000000" value={DDV} className="slider" id="2" step="100000"
-            onChange={(e)=>setDDV(e.target.value)}/>  
-          </div> 
+            onChange={(e)=>setDDV(e.target.value)}/>
+          </div>
           <div className='value'>
             ${comma(DDV)}
           </div>
@@ -244,11 +276,11 @@ const changeLange = () =>{
         <div className='div'>
           <div className='text'>
           {Eng ? " How much HDX you staking:" : "Stake'deki HDX miktarınız:"}
-            <input className="inputNumber" type="number" placeholder="1<x<1000000" min="1" max="1000000" value={D1}  
-            onChange={(e)=>{if(e.target.value<=1000000 && e.target.value>=0)setD1(e.target.value)}}/> 
+            <input className="inputNumber" type="number" placeholder="1<x<10000000" min="1" max="10000000" default="0"value={D1}  
+            onChange={(e)=>{if(e.target.value==""){e.target.value=0}if(e.target.value<=10000000 && e.target.value>=0)setD1(e.target.value)}}/> 
           </div>
           <div  className='input'>
-            <input type="range" min="0" max="1000000" value={D1} className="slider" id="7" 
+            <input type="range" min="0" max="10000000" value={D1} className="slider" id="7" 
             onChange={(e)=>setD1(e.target.value)}/>
           </div> 
           <div className='value'>
@@ -258,11 +290,11 @@ const changeLange = () =>{
         <div className='div'>
           <div className='text'>
           {Eng ? "Total staked HDX amount:" : "Toplam stake deki HDX miktarı:"}
-            <input className="inputNumber" type="number" placeholder="1<x<100000000" min="1" max="100000000" value={D2}  
-            onChange={(e)=>{if(e.target.value<=100000000 && e.target.value>=0)setD2(e.target.value)}}/> 
+            <input className="inputNumber" type="number" placeholder="1<x<150000000" min="1" max="150000000" value={D2}  
+            onChange={(e)=>{if(e.target.value<=150000000 && e.target.value>=0)setD2(e.target.value)}}/> 
           </div>
           <div  className='input'>
-            <input type="range" min="1" max="100000000" value={D2} className="slider" id="8" 
+            <input type="range" min="1" max="150000000" value={D2} className="slider" id="8" 
             onChange={(e)=>setD2(e.target.value)}/>
           </div> 
           <div className='value'>
