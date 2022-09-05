@@ -141,7 +141,7 @@ const changeLange = () =>{
         </div>
         </div>
         <div className="header">
-          <p>{Eng ? "HDX DEX Fee Distribution Calculator" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
+          <p>{Eng ? "HDX DEX Fee Distribution Calculator" : "HDX DEX FEE Dağıtım Hesaplama"}</p>
         </div>
         
         <div className='infos1'>
