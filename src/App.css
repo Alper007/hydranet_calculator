@@ -30,11 +30,13 @@ body{
   margin-left: 15px;
   margin-top: 20px;
   padding: 20px;
+  border: solid 2px rgb(47, 23, 23);
 }
 .nav{
   background-color: aliceblue;
   width: 20px;
   height: 30px;
+  border: solid 2px rgb(47, 23, 23);
 }
 .biginput{
   width: 750px;
@@ -281,6 +283,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 10px;
     margin-top: 2px;
     height:97px;
+
   }
  
   .input{
@@ -899,8 +902,8 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
     margin-left: 200px;
     text-align: center;
     font-size: 30px;
@@ -909,17 +912,16 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 70px;
     border: solid rgb(101, 99, 117) 12px;
   }
   .Navbar{
     width: 1050px;
-    height: 150px;
+    height: 120px;
     background-color: #c58c2a;
     margin-left: 100px;
     margin-top: 20px;
-    padding: 20px;
-    padding: 30px;
+    padding: 10px;
     border-radius: 30px;
   }
 
@@ -928,7 +930,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 90px;
     position: relative;
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
     padding: 7px;
     font-size: 25px;
     text-align: left;
@@ -942,7 +944,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     float: left;
     margin-left: 100px;
     border-radius: 30px;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
   .biginputbuton{
     position: relative;
@@ -971,7 +973,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     padding: 10px;
     border-radius: 20px;
     border: red solid 1px;
-    margin-top: 3px;
+    margin-top: 0px;
   }
   .value{
     border: 2px solid red;
@@ -993,14 +995,14 @@ input[type="range"]::-webkit-slider-runnable-track {
     float: left;
     margin-right: 10px;
     border-radius: 20px;
-    margin-top: px;
-    margin-bottom: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     height:55px;
   }
   .div{
     position: relative;
     float: left;
-    margin-top: 8px;
+    margin-top: 3px;
     margin-left: 100px;
     border-radius: 20px;
     
@@ -1009,7 +1011,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     position: relative;
     float: left;
     margin-left: 100px;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 10px;
     border-radius: 20px;
   }
@@ -1017,7 +1019,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     position: relative;
     float: left;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 5px;
     border-radius: 20px;
   }
   .bars{
@@ -1580,22 +1582,22 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-color: rgb(198, 251, 233);
   }
   .header{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-bottom: 3px;
+    margin-top: 5px;
     text-align: center;
-    font-size: 20px;
+    margin-left: 60px;
+    font-size: 16px;
     background-color: rgb(255, 255, 255);
-    width: 440px;
+    width: 330px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 55px;
     border: solid rgb(101, 99, 117) 12px;
   }
   .Navbar{
     width: 445px;
-    height: 90px;
+    height: 80px;
     background-color: #c58c2a;
     margin-left: 10px;
     margin-top: 10px;
@@ -1605,10 +1607,10 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   .nav{
     width: 110px;
-    height: 65px;
+    height: 55px;
     position: relative;
     float: left;
-    margin-left: 4px;
+    margin-left: 3px;
     padding: 5px;
     font-size: 13px;
     text-align: left;
@@ -1635,7 +1637,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   .btn-success{
     font-size: 11px;
-    margin-top: 15px;
+    margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 0px;
     margin-left: 4px;
@@ -1660,7 +1662,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   
   .input{
     background-color: #83a5c3;
-    width:170px;
+    width:165px;
     height: 20px;
     position: relative;
     float: left;
@@ -1690,7 +1692,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     float: left;
     margin-right: 2px;
     border-radius: 20px;
-    margin-top: 3px;
+    margin-top: 6px;
     margin-bottom: 2px;
     height: 26px;
   }
@@ -1716,6 +1718,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-left: 10px;
     margin-top: 5px;
     border-radius: 20px;
+
   }
   .bars{
     position: relative;
@@ -1798,7 +1801,7 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   }
 }
-@media screen and (min-width: 425px) and (max-width: 479px){
+@media screen and (min-width: 410px) and (max-width: 479px){
   
   .App {
     text-align: center;
@@ -1808,28 +1811,30 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   }
   .Navbar{
-    width: 400px;
-    height: 90px;
+    width: 390px;
+    height: 80px;
     background-color: #c58c2a;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 13px;
     border-radius: 30px;
+    border: solid 2px rgb(0, 0, 0);
   }
 
   .nav{
     width: 90px;
-    height: 65px;
+    height: 55px;
     position: relative;
     float: left;
-    margin-left: 4px;
+    margin-left: 3px;
     padding: 5px;
-    font-size: 13px;
+    font-size: 12px;
     text-align: left;
     border-radius: 20px;
+    border: solid 2px rgb(47, 23, 23);
   }
   .biginput{
-    width: 350px;
+    width: 330px;
     height: 22px;
     text-align: center;
     position: relative;
@@ -1849,27 +1854,27 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-top: 5px;
   }
   .btn-success{
-    font-size: 14px;
-    margin-top: 15px;
+    font-size: 12px;
+    margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 0px;
-    margin-left: 1px;
+    margin-left: 4px;
   }
   body{
     background-color: rgb(161, 255, 224);
   }
   .header{
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-top: 5px;
     text-align: center;
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: 40px;
+    font-size: 16px;
     background-color: rgb(255, 255, 255);
-    width: 400px;
+    width: 330px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 55px;
     border: solid rgb(101, 99, 117) 12px;
   }
   
@@ -1891,17 +1896,17 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   .input{
     background-color: #83a5c3;
-    width:196px;
+    width:180px;
     height: 10px;
     position: relative;
     float: left;
     padding: 9px;
     border-radius: 8px;
-    border: red solid 1px;
+    border: rgb(0, 0, 0) solid 1px;
     margin-top: 3px;
   }
   .value{
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     background-color: aqua;
     position: relative;
     float: left;
@@ -1913,7 +1918,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 20px;
   }
   .text{
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
     background-color: aqua;
     padding: 4px;
     width: 150px;
@@ -1933,7 +1938,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 15px;
 
   }
-  .infos1{
+  .infos1,.infos2{
     position: relative;
     float: left;
     margin-left: 9px;
@@ -1941,20 +1946,14 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-bottom: 1px;
     border-radius: 15px;
   }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 9px;
-    margin-top: 3px;
-    border-radius: 15px;
-  }
+
   .info, .infofirst{
     position: relative;
     float: left;
     background-color: #fe8b84;
-    border: 2px solid rgb(148, 18, 18);
+    border: 2px solid rgb(0, 0, 0);
     padding: 4px;
-    width: 98px;
+    width: 95px;
     position: relative;
     float: left;
     margin-right: 2px;
@@ -1998,9 +1997,8 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
     background-size: cover;
-    
     cursor: pointer;
-    margin-top: -2px;
+    margin-top: -3px;
     -webkit-appearance: none;
   }
   
@@ -2011,7 +2009,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 10px;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -9px;
+    margin-top: -10px;
   }
   .inputNumber{
     font-size: 5px;
@@ -2020,7 +2018,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 410px){
   
   .App {
     text-align: center;
@@ -2030,28 +2028,30 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   }
   .Navbar{
-    width: 400px;
-    height: 90px;
+    width: 390px;
+    height: 80px;
     background-color: #c58c2a;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 8px;
     padding: 13px;
     border-radius: 30px;
+    border: solid 2px rgb(0, 0, 0);
   }
 
   .nav{
     width: 90px;
-    height: 65px;
+    height: 55px;
     position: relative;
     float: left;
-    margin-left: 4px;
-    padding: 5px;
-    font-size: 13px;
+    margin-left: 3px;
+    padding: 6px;
+    font-size: 12px;
     text-align: left;
     border-radius: 20px;
+    border: solid 2px rgb(47, 23, 23);
   }
   .biginput{
-    width: 350px;
+    width: 330px;
     height: 22px;
     text-align: center;
     position: relative;
@@ -2071,27 +2071,27 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-top: 5px;
   }
   .btn-success{
-    font-size: 14px;
-    margin-top: 15px;
+    font-size: 12px;
+    margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 0px;
-    margin-left: 1px;
+    margin-left: 4px;
   }
   body{
     background-color: rgb(161, 255, 224);
   }
   .header{
-    margin-bottom: 20px;
-    margin-top: 10px;
+    margin-bottom: 3px;
+    margin-top: 5px;
     text-align: center;
-    margin-left: 10px;
-    font-size: 20px;
+    margin-left: 40px;
+    font-size: 16px;
     background-color: rgb(255, 255, 255);
-    width: 400px;
+    width: 330px;
     border-radius: 20px;
     padding: 2px;
     color:rgb(78, 11, 60);
-    height: 90px;
+    height: 55px;
     border: solid rgb(101, 99, 117) 12px;
   }
   
@@ -2113,17 +2113,17 @@ input[type="range"]::-webkit-slider-runnable-track {
 
   .input{
     background-color: #83a5c3;
-    width:196px;
+    width:180px;
     height: 10px;
     position: relative;
     float: left;
     padding: 9px;
     border-radius: 8px;
-    border: red solid 1px;
+    border: rgb(0, 0, 0) solid 1px;
     margin-top: 3px;
   }
   .value{
-    border: 2px solid rgb(255, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
     background-color: aqua;
     position: relative;
     float: left;
@@ -2135,7 +2135,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 20px;
   }
   .text{
-    border: 2px solid red;
+    border: 2px solid rgb(0, 0, 0);
     background-color: aqua;
     padding: 4px;
     width: 150px;
@@ -2155,7 +2155,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 15px;
 
   }
-  .infos1{
+  .infos1,.infos2{
     position: relative;
     float: left;
     margin-left: 9px;
@@ -2163,20 +2163,14 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-bottom: 1px;
     border-radius: 15px;
   }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 9px;
-    margin-top: 3px;
-    border-radius: 15px;
-  }
+
   .info, .infofirst{
     position: relative;
     float: left;
     background-color: #fe8b84;
-    border: 2px solid rgb(148, 18, 18);
+    border: 2px solid rgb(0, 0, 0);
     padding: 4px;
-    width: 98px;
+    width: 95px;
     position: relative;
     float: left;
     margin-right: 2px;
@@ -2220,9 +2214,8 @@ input[type="range"]::-webkit-slider-runnable-track {
     background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
     background-position: 0 0;
     background-size: cover;
-    
     cursor: pointer;
-    margin-top: -2px;
+    margin-top: -3px;
     -webkit-appearance: none;
   }
   
@@ -2233,7 +2226,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     border-radius: 10px;
     cursor: pointer;
     -webkit-appearance: none;
-    margin-top: -9px;
+    margin-top: -10px;
   }
   .inputNumber{
     font-size: 5px;

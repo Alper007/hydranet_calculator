@@ -134,14 +134,14 @@ const changeLange = () =>{
           </div>
           <div className='nav'>
             Staked HDX Ratio:
-            <p>{(BigNumber.from(stakedHdx).toString().slice(0,-9)/BigNumber.from(totalHdx).toString().slice(0,-9)*100).toString().slice(0,-12)}%</p>
+            {(BigNumber.from(stakedHdx).toString().slice(0,-9)/BigNumber.from(totalHdx).toString().slice(0,-9)*100).toString().slice(0,-12)}%
           </div>
           <div className='button'>
           <button className="btn btn-success" onClick={changeLange}>{Eng ? "TURKISH" : "ENGLISH"}</button>
         </div>
         </div>
         <div className="header">
-          <p>{Eng ? "HDX DEX Fee Distribution Calculator Application" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
+          <p>{Eng ? "HDX DEX Fee Distribution Calculator" : "HDX DEX FEE Dağıtım Hesaplama Uygulaması"}</p>
         </div>
         
         <div className='infos1'>
@@ -161,7 +161,8 @@ const changeLange = () =>{
           {Eng ? "Treasury will get(%5):" : "Hazinenin alacağı (%5):"}
             <div className='numbers'><p>${comma(TTF)}</p></div>
           </div>
-      </div>
+        </div>
+        
         <div>
           <div>
             <input  className="biginput" value={address} 
@@ -171,6 +172,7 @@ const changeLange = () =>{
           </div>
           <div><button className="biginputbuton" onClick={fill}>Click</button></div>
         </div>
+        
         <div className='div'>
           <div className='text'>
           {Eng ? "HNFTs locking duration(month):" : "HNFT kitleme süresi (Ay):"}
@@ -287,7 +289,7 @@ const changeLange = () =>{
         </div>
         <div className='div'>
           <div className='text'>
-          {Eng ? "Total staked HDX amount:" : "Toplam stake deki HDX miktarı:"}
+          {Eng ? "Total staked HDX:" : "Toplam stake deki HDX:"}
             <input className="inputNumber" type="number" placeholder="1<x<150000000" min="1" max="150000000" value={D2}  
             onChange={(e)=>{if(e.target.value<=150000000 && e.target.value>=0)setD2(e.target.value)}}/> 
           </div>
@@ -299,42 +301,43 @@ const changeLange = () =>{
             {D2}
           </div>
         </div>
-      </div>
-
-      <div className='infos2'>
-        <div className='infofirst'>
-        {Eng ?  <p>Total revenue (for {MA} month):</p> : <p>Toplam gelir ({MA} ay için)</p>}
-          <div className='numbers'><p>${comma(YTR)}</p></div>
+      
+      
+        <div className='infos2'>
+          <div className='infofirst'>
+          {Eng ?  <p>Total revenue (for {MA} month):</p> : <p>Toplam gelir ({MA} ay için)</p>}
+            <div className='numbers'><p>${comma(YTR)}</p></div>
+          </div>
+          <div className='info'>
+          {Eng ? "Daily revenue:" : "Günlük gelir:"}
+            <div className='numbers'><p>${comma(DR)}</p></div>
+          </div>
+          <div className='info'>
+          {Eng ? "Montly revenue:" : "Aylık gelir:"}
+            <div className='numbers'><p>${comma(MR)}</p></div>
+          </div>
+          <div className='info'>
+          {Eng ? "Yearly revenue:" : "Yıllık gelir:"}
+            <div className='numbers'><p>${comma(YR)}</p></div>
+          </div>
         </div>
-        <div className='info'>
-        {Eng ? "Daily revenue:" : "Günlük gelir:"}
-          <div className='numbers'><p>${comma(DR)}</p></div>
-        </div>
-        <div className='info'>
-        {Eng ? "Montly revenue:" : "Aylık gelir:"}
-          <div className='numbers'><p>${comma(MR)}</p></div>
-        </div>
-        <div className='info'>
-        {Eng ? "Yearly revenue:" : "Yıllık gelir:"}
-          <div className='numbers'><p>${comma(YR)}</p></div>
-        </div>
-      </div>
-      <div className='infos2'>
-        <div className='infofirst'>
-        {Eng ?  <p>Your net worth (End of the {MA}. month):</p> : <p>Toplam varlığınız ({MA}. ayın sonunda):</p>}
-          <div className='numbers'><p>${comma(Math.floor(((15000*B1)+Number(D1))*P+YTR))}</p></div>
-        </div>
-        <div className='info'>
-        {Eng ?  <p>Your {B1} hnft worth ({15000*B1} hdx) :</p> : <p>{B1} adet HNFT değeri ({15000*B1} hdx) :</p>}
-          <div className='numbers'><p>${comma(Math.floor(15000*B1*P))}</p></div>
-        </div>
-        <div className='info'>
-        {Eng ?  <p>Your staked HDX worth ({D1}):</p> : <p>Stake'deki HDX'leriniz({D1}) :</p>}
-          <div className='numbers'><p>${comma(Math.floor(D1*P))}</p></div>
-        </div>
-        <div className='info'>
-        {Eng ?  <p>Your total HDX worth ({(15000*B1)+Number(D1)}):</p> : <p>Tüm HDX'lerinizin değeri({(15000*B1)+Number(D1)}) :</p>}
-          <div className='numbers'><p>${comma(Math.floor(((15000*B1)+Number(D1))*P))}</p></div>
+        <div className='infos2'>
+          <div className='infofirst'>
+          {Eng ?  <p>Your net worth (End of the {MA}. month):</p> : <p>Toplam varlığınız ({MA}. ayın sonunda):</p>}
+            <div className='numbers'><p>${comma(Math.floor(((15000*B1)+Number(D1))*P+YTR))}</p></div>
+          </div>
+          <div className='info'>
+          {Eng ?  <p>Your {B1} hnft worth ({15000*B1} hdx) :</p> : <p>{B1} adet HNFT değeri ({15000*B1} hdx) :</p>}
+            <div className='numbers'><p>${comma(Math.floor(15000*B1*P))}</p></div>
+          </div>
+          <div className='info'>
+          {Eng ?  <p>Your staked HDX worth ({D1}):</p> : <p>Stake'deki HDX'leriniz({D1}) :</p>}
+            <div className='numbers'><p>${comma(Math.floor(D1*P))}</p></div>
+          </div>
+          <div className='info'>
+          {Eng ?  <p>Your total HDX worth ({(15000*B1)+Number(D1)}):</p> : <p>Tüm HDX'lerinizin değeri({(15000*B1)+Number(D1)}) :</p>}
+            <div className='numbers'><p>${comma(Math.floor(((15000*B1)+Number(D1))*P))}</p></div>
+          </div>
         </div>
       </div>
     </div>
