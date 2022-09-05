@@ -52,23 +52,23 @@ function App() {
   const _HdxToken = new ethers.Contract(ADDRESS,HDX_ABI,provider);
   const _ShdxToken = new ethers.Contract(SHDXADDRESS, SHDX_ABI,provider);
 
-  // useEffect(()=>{
-  //   _HdxToken.totalSupply()
-  //   .then( (e) => setTotalHdx(e));
-  //   _HdxToken.balanceOf("0xd20cdf95a08acdf8aa360232caeda6e59a06951d")
-  //   .then( (a)=> setStakedHdx(a));
-  //   setD2(BigNumber.from(stakedHdx).toString().slice(0,-9));
-  //   setD1(BigNumber.from(shdxAmount).toString().slice(0,-9));
-  // },[shdxAmount]);
+  useEffect(()=>{
+    _HdxToken.totalSupply()
+    .then( (e) => setTotalHdx(e));
+    _HdxToken.balanceOf("0xd20cdf95a08acdf8aa360232caeda6e59a06951d")
+    .then( (a)=> setStakedHdx(a));
+    setD2(BigNumber.from(stakedHdx).toString().slice(0,-9));
+    setD1(BigNumber.from(shdxAmount).toString().slice(0,-9));
+  },[shdxAmount]);
   
-  // const fill = async () =>  {
-  //   try{
-  //     const a = await _ShdxToken.balanceOf(address.trim()); 
-  //     setShdxAmount(a);
-  //   }catch{
-  //     alert("Please type a valid address")
-  //   }
-  // }
+  const fill = async () =>  {
+    try{
+      const a = await _ShdxToken.balanceOf(address.trim()); 
+      setShdxAmount(a);
+    }catch{
+      alert("Please type a valid address")
+    }
+  }
 
   
 const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000);
@@ -171,7 +171,7 @@ const changeLange = () =>{
                   (e)=> setAddress(e.target.value)} 
               type="text" placeholder="Type your address to fill variables automatically"/>
           </div>
-          {/* <div><button className="biginputbuton" onClick={fill}>Click</button></div> */}
+          <div><button className="biginputbuton" onClick={fill}>Click</button></div>
         </div>
         <div className='div'>
           <div className='text'>
