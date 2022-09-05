@@ -1,7 +1,5 @@
 import './App.css';
-import { hasPointerEvents, wait } from '@testing-library/user-event/dist/utils';
-import bootstrap from 'bootstrap'
-import react, {useEffect, useState} from "react"; 
+import {useEffect, useState} from "react"; 
 import {BigNumber, ethers} from "ethers";
 import { HDX_ABI, SHDX_ABI } from './info/abi.js';
 import { ADDRESS, SHDXADDRESS } from './info/address.js';
@@ -52,23 +50,23 @@ function App() {
   const _HdxToken = new ethers.Contract(ADDRESS,HDX_ABI,provider);
   const _ShdxToken = new ethers.Contract(SHDXADDRESS, SHDX_ABI,provider);
 
-  useEffect(()=>{
-    _HdxToken.totalSupply()
-    .then( (e) => setTotalHdx(e));
-    _HdxToken.balanceOf("0xd20cdf95a08acdf8aa360232caeda6e59a06951d")
-    .then( (a)=> setStakedHdx(a));
-    setD2(BigNumber.from(stakedHdx).toString().slice(0,-9));
-    setD1(BigNumber.from(shdxAmount).toString().slice(0,-9));
-  },[shdxAmount]);
+  // useEffect(()=>{
+  //   _HdxToken.totalSupply()
+  //   .then( (e) => setTotalHdx(e));
+  //   _HdxToken.balanceOf("0xd20cdf95a08acdf8aa360232caeda6e59a06951d")
+  //   .then( (a)=> setStakedHdx(a));
+  //   setD2(BigNumber.from(stakedHdx).toString().slice(0,-9));
+  //   setD1(BigNumber.from(shdxAmount).toString().slice(0,-9));
+  // },[shdxAmount]);
   
-  const fill = async () =>  {
-    try{
-      const a = await _ShdxToken.balanceOf(address.trim()); 
-      setShdxAmount(a);
-    }catch{
-      alert("Please type a valid address")
-    }
-  }
+  // const fill = async () =>  {
+  //   try{
+  //     const a = await _ShdxToken.balanceOf(address.trim()); 
+  //     setShdxAmount(a);
+  //   }catch{
+  //     alert("Please type a valid address")
+  //   }
+  // }
 
   
 const TDF = Math.floor(Number(MA)*(30*(Number(DDV))*3)/1000);
@@ -101,7 +99,7 @@ const MPSB = () =>{
 }
 
 const changeLange = () =>{
-  if (Eng == true){
+  if (Eng === true){
     setEng(false)
   }else{
     setEng(true);
@@ -171,7 +169,7 @@ const changeLange = () =>{
                   (e)=> setAddress(e.target.value)} 
               type="text" placeholder="Type your address to fill variables automatically"/>
           </div>
-          <div><button className="biginputbuton" onClick={fill}>Click</button></div>
+          {/* <div><button className="biginputbuton" onClick={fill}>Click</button></div> */}
         </div>
         <div className='div'>
           <div className='text'>
@@ -277,7 +275,7 @@ const changeLange = () =>{
           <div className='text'>
           {Eng ? " How much HDX you staking:" : "Stake'deki HDX miktarınız:"}
             <input className="inputNumber" type="number" placeholder="1<x<10000000" min="1" max="10000000" default="0"value={D1}  
-            onChange={(e)=>{if(e.target.value==""){e.target.value=0}if(e.target.value<=10000000 && e.target.value>=0)setD1(e.target.value)}}/> 
+            onChange={(e)=>{if(e.target.value===""){e.target.value=0}if(e.target.value<=10000000 && e.target.value>=0)setD1(e.target.value)}}/> 
           </div>
           <div  className='input'>
             <input type="range" min="0" max="10000000" value={D1} className="slider" id="7" 
