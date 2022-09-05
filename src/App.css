@@ -2044,8 +2044,8 @@ input[type="range"]::-webkit-slider-runnable-track {
     position: relative;
     float: left;
     margin-left: 3px;
-    padding: 6px;
-    font-size: 12px;
+    padding: 5px;
+    font-size: 10px;
     text-align: left;
     border-radius: 20px;
     border: solid 2px rgb(47, 23, 23);
@@ -2071,7 +2071,7 @@ input[type="range"]::-webkit-slider-runnable-track {
     margin-top: 5px;
   }
   .btn-success{
-    font-size: 12px;
+    font-size: 9px;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-right: 0px;
@@ -2230,7 +2230,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   .inputNumber{
     font-size: 5px;
-    width: 48px;
+    width: 45px;
     margin-top: -2px;
   }
 }
