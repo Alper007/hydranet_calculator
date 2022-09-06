@@ -1,198 +1,223 @@
 .App {
   text-align: center;
-  font-size: 16px;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-weight:700;
-  position: center;
+  font-size: 12px;
+  font-weight:500;
 }
 body{
-  background-color: rgb(198, 251, 233);
+  background-color: rgb(8, 20, 64);
 }
 .header{
-  margin-bottom: 20px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 150px;
+  font-size: 35px;
   text-align: center;
-  font-size: 30px;
-  background-color: rgb(255, 255, 255);
-  width: 800px;
-  border-radius: 20px;
-  padding: 2px;
-  color:rgb(78, 11, 60);
-  height: 90px;
-  border: solid rgb(101, 99, 117) 12px;
+  color:rgb(43, 225, 238);
+  border-bottom: 2px solid black;
+  height: 60px;
+  padding: 3px;
+  background-color: rgb(6, 17, 56);
+
+}
+.hydranet{
+  font-size: 33px;
+  margin-left: 6%;
+  position: relative;
+  float: left;
+}
+.hdxlogo{
+  position: relative;
+  float: left;
+  height: 45px;
+  width: 45px;
+  margin-top: 4px;
+  margin-left: 6px;
 }
 .Navbar{
-  width: 880px;
-  height: 110px;
-  background-color: #d084f9;
-  margin-left: 15px;
-  margin-top: 20px;
-  padding: 20px;
-  border: solid 2px rgb(47, 23, 23);
+  background-color: #020730;
+  height: 75px;
+  color:azure;
+  padding: 5px;
+  margin-top: 5px;
 }
 .nav{
-  background-color: aliceblue;
-  width: 20px;
-  height: 30px;
-  border: solid 2px rgb(47, 23, 23);
+  position: relative;
+  float: left;
+  margin-left: 20px;
+  font-size:20px;
+  font-size: 15px;
+  }
+.navs{
+  float: right;
+  float: top;
+  margin-right: 20%;
+  
+}
+.navnumber{
+  position: absolute;
+  float: bottom;
+  margin-top: 30px;
+  margin-left: 20px;
+  color: rgb(192, 255, 255);
+  
+}
+.navtext{
+  position: relative;
+  float: top;
+  font-size: 20px;
+  color: rgb(1, 183, 183);
+}
+.bars{
+  width: 50%;
+  position: absolute;
+
+  margin-left: 7%;
 }
 .biginput{
-  width: 750px;
-  height: 40px;
+  width: 65%;
+  font-size:15px;
   text-align: center;
   position: relative;
   float: left;
-  margin-left: 15%;
-  margin-top: 7px;
+  border-radius: 8px;
+  margin-left: 10%;
+  margin-top: 10px;
+  height: 40px;
+  border: 3px solid rgb(76, 195, 183);
+
 }
-.biginputbuton{
+.btn-info{
   position: relative;
   float: left;
-  margin-left: 30px;
-  font-size:22px
+  font-size:16px;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 9%;
+  height: 40px;
+  margin-left: 5px;
+
+}
+
+
+.btn-primary{
+  font-size: 20px;
+  position: absolute;
+  right: 0;
+  margin-right: 6%;
+  margin-top: 4px;
 }
 .input{
-  background-color: #83a5c3;
-  width:410px;
-  height: 60px;
+  width:90%;
   position: relative;
-  float: left;
-  padding: 10px;
-  border-radius: 20px;
-  border: red solid 1px;
-  margin-top: 3px;
+  margin-left: 3%;
+  height: 20px;
+
 }
-.value{
-  border: 2px solid red;
-  background-color: aqua;
+.inputtop{
+
+  width:89.5%;
+  margin-left: 3%;
+  margin-bottom: 33px;
+}
+.inputNumber{
+  width: 90px;
   position: relative;
-  float: left;
-  padding: 10px;
-  width: 125px;
-  margin-left: 10px;
-  border-radius: 20px;
-  margin-top: 7px;
-  height: 50px;
+  float: right;
+  border-radius: 7px;
+  background-color: rgb(134, 225, 225);
+
+}
+
+.value{
+  color: rgb(255, 255, 255);
+  position: relative;
+  float: right;
+  background-color: #054282;
+  width:80px;
+  border-radius: 5px;
+
 }
 .text{
-  border: 2px solid red;
-  background-color: aqua;
-  padding: 12px;
-  width: 400px;
+  color: rgb(174, 208, 238);
+  width: 180px;
   position: relative;
   float: left;
-  margin-right: 10px;
-  border-radius: 20px;
-  margin-top: 5px;
-  margin-bottom: 2px;
+  margin-left: 5px;
   text-align: left;
-  height: 70px;
+  border-radius: 5px;
 }
 .div{
   position: relative;
-  float: left;
-  margin-top: 8px;
-  margin-left: 100px;
-  border-radius: 20px;
-  
-}
-.infos1{
-  position: absolute;
-  float: left;
-  margin-left: 100px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 20px;
-}
-.infos2{
-  position: relative;
-  float: left;
-  margin-left: 100px;
-  margin-top: 20px;
-  border-radius: 20px;
-}
-.bars{
-  position: relative;
-  float: left;
-  border-radius: 20px;
-}
-.info{
-  position: relative;
-  float: left;
-  background-color: #f17e7e;
-  border: 2px solid rgb(157, 32, 32);
-  padding: 10px;
-  width: 230px;
-  position: relative;
-  float: left;
-  margin-right: 10px;
-  height: 100px;
-  border-radius: 20px;
-}
-.numbers{
-  width: 120px;
-  height: 25px;
-  background-color: rgb(255, 236, 198);
-  border-radius: 20px;
-  margin-left: 40px;
-  margin-bottom: 10px;
-  position: absolute;
-  bottom: 0;
+  border-bottom: solid 3px rgb(37, 97, 107);
+  padding: 12px;
+  height: 82px;
 
 }
-.infofirst{
-  background-color: #e979cb;
+.inf{
+  float: right;
+  width: 35%;
+  margin-top: 20px ;
+  margin-right: 4%;
+
+}
+.infos1,.infos2,.infos3{
+  color: rgb(174, 208, 238);
+  text-align: left;
+  margin-bottom: 40px;
+
+}
+.info, .infolast{
+  border: 2px solid rgb(48, 36, 135);
+  margin-top: 9px;
+  width: 95%;
+  background-color: rgb(21, 9, 75);
+  font-size: 15px;
+  padding: 13px;
+  border-radius: 8px;
+}
+.infolast{
+  background-color: rgb(17, 8, 56);
+}
+
+.numbers{
+  position: relative;
+  text-align: right;
+  color: rgb(0, 255, 255);
+
+
+}
+.asd{
   position: relative;
   float: left;
-  border: 2px solid rgb(167, 82, 82);
-  padding: 10px;
-  width: 230px;
-  position: relative;
-  float: left;
-  margin-right: 10px;
-  height: 100px;
-  border-radius: 20px;
+
 }
 input[type="range"] {
   -webkit-appearance: none;
   background: transparent;
-  width: 95%;
-
   outline: none;
 }
-
 input[type="range"]::-webkit-slider-thumb {
   border: none;
-  height: 27px;
-  width: 27px;
+  height: 22px;
+  width: 22px;
   background-color: transparent;
   background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
   background-position: 0 0;
   background-size: cover;
-  transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-  cursor: pointer;
-  margin-top: -7px;
+  transform: scale(1.5) ;
+  margin-top: -8px;
   -webkit-appearance: none;
 }
-
 input[type="range"]::-webkit-slider-runnable-track {
   width: 100%;
-  height: 16px;
+  height: 10px;
   background: rgb(67, 104, 159);
   border-radius: 10px;
   cursor: pointer;
   -webkit-appearance: none;
-  margin-top: 13px;
 }
- 
 .slider {
   -webkit-appearance: none;  /* Override default CSS styles */
   appearance: none;
   width: 99%; /* Full-width */
-  height: 10px; /* Specified height */
-  background: #2187e0; /* Grey background */
+  height: 0px; /* Specified height */
   outline: none; /* Remove outline */
   opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
@@ -201,2036 +226,529 @@ input[type="range"]::-webkit-slider-runnable-track {
  .slider:hover {
   opacity: 8; 
 }  
-.inputNumber{
-  width: 110px;
-  position: absolute;
-  right:0;
-  margin-right: 3px;
-  margin-top: -3px;
-  border-radius: 10px;
-}
-.button{
-  position: relative;
-
-}
 
 
-@media screen and (min-width: 3248px){
-  
+@media screen and (min-width: 2400px){
   .App {
-    text-align: center;
-    font-size: 45px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-  }
-  body{
-    background-color: rgb(198, 251, 233);
+    font-size: 22px;
   }
   .header{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    margin-left: 200px;
-    text-align: center;
-    font-size: 100px;
-    background-color: rgb(255, 255, 255);
-    width: 2500px;
-    border-radius: 30px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 200px;
-    border: solid rgb(101, 99, 117) 12px;
+    font-size: 55px;
+    height: 90px;
+  }
+  .hydranet{
+    font-size: 63px;
+  }
+  .hdxlogo{
+    height: 75px;
+    width: 75px;
+    margin-top: 12px;
   }
   .Navbar{
-    width: 3000px;
-    height: 150px;
-    background-color: #c58c2a;
-    margin-left: 15px;
-    margin-top: 20px;
-    padding: 20px;
-    padding: 30px;
-  }
-  .Navbar{
-    width: 2800px;
-    border-radius: 30px;
-    margin-left: 120px;
+    background-color: #020730;
+    height: 110px;
+    color:azure;
   }
   .nav{
-    width: 700px;
-    height: 90px;
-    position: relative;
-    float: left;
     margin-left: 20px;
-    padding: 7px;
-    font-size: 50px;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .biginput{
-    width: 2600px;
-    height: 100px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 120px;
-    border-radius: 30px;
-    margin-bottom: 4px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    font-size:60px;
-    border-radius: 10px;
-    margin-top: 2px;
-    height:97px;
-
-  }
- 
-  .input{
-    background-color: #83a5c3;
-    width:1370px;
-    height: 110px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    border-radius: 30px;
-    border: red solid 1px;
-    margin-top: 8px;
-  }
-  .value{
-    border: 3px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 330px;
-    margin-left: 10px;
-    border-radius: 30px;
-    margin-top: 7px;
-    height: 90px;
-  }
-  .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 17px;
-    width: 1100px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    border-radius: 30px;
-    margin-top: px;
-    margin-bottom: 2px;
-    height: 110px;
-  }
-  .div{
-    position: relative;
-    float: left;
-    margin-top: 8px;
-    margin-left: 100px;
-    border-radius: 30px;
-    
-  }
-  .infos1{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 30px;
-  }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 20px;
-    border-radius: 30px;
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 30px;
-  }
-  .info{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 10px;
-    width: 700px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 250px;
-    border-radius: 30px;
-  }
-  .numbers{
-    width: 360px;
-    height: 60px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 30px;
-    margin-left: 150px;
-    margin-bottom: 25px;
-    position: absolute;
-    bottom: 0;
-
-  }
-  .infofirst{
-    background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 10px;
-    width: 700px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 250px;
-    border-radius: 30px;
-  }
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 90%;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 45px;
-    width: 45px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -9px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 26px;
-    background: rgb(67, 104, 159);
-    border-radius: 20px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: 1px;
-  }
-   
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 20px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  .inputNumber{
-    width: 250px;
-    position: absolute;
-    right:0;
-    margin-right: 9px;
-    margin-top: -3px;
-    border-radius: 20px;
-  }
-  .button{
-    position: relative;
-  
-  }
-  .btn-success{
-    font-size: 50px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 200px;
-    margin-left: 40px;
-  }
-}
-@media screen and (min-width: 2049px) and (max-width: 3248px){
-  
-  .App {
-    text-align: center;
-    font-size: 26px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-  }
-  body{
-    background-color: rgb(198, 251, 233);
-  }
-  .header{
-    margin-bottom: 20px;
-    margin-top: 30px;
-    margin-left: 200px;
-    text-align: center;
-    font-size: 40px;
-    background-color: rgb(255, 255, 255);
-    width: 1500px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 90px;
-    border: solid rgb(101, 99, 117) 12px;
-  }
-  .Navbar{
-    width: 1800px;
-    height: 150px;
-    background-color: #c58c2a;
-    margin-left: 120px;
-    margin-top: 20px;
-    padding: 20px;
-    padding: 30px;
-    border-radius: 30px;
-  }
-
-  .nav{
-    width: 450px;
-    height: 90px;
-    position: relative;
-    float: left;
-    margin-left: 20px;
-    padding: 7px;
-    font-size: 30px;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .biginput{
-    width: 1500px;
-    height: 60px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 120px;
-    border-radius: 30px;
-    margin-bottom: 4px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
     font-size:30px;
-    border-radius: 10px;
-    margin-top: 2px;
-    height:57px;
-  }
-  .btn-success{
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    margin-left: 40px;
-  }
- 
-  .input{
-    background-color: #83a5c3;
-    width:1100px;
-    height: 60px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    border-radius: 20px;
-    border: red solid 1px;
-    margin-top: 3px;
-  }
-  .value{
-    border: 2px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 200px;
-    margin-left: 10px;
-    border-radius: 20px;
-    margin-top: 7px;
-  }
-  .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 10px;
-    width: 500px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    border-radius: 20px;
-    margin-top: px;
-    margin-bottom: 2px;
-  }
-  .div{
-    position: relative;
-    float: left;
-    margin-top: 8px;
-    margin-left: 100px;
-    border-radius: 20px;
-    
-  }
-  .infos1{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 20px;
-    border-radius: 20px;
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 20px;
-  }
-  .info{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 10px;
-    width: 450px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 120px;
-    border-radius: 20px;
-  }
-  .numbers{
-    width: 210px;
-    height: 40px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 110px;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: 0;
 
-  }
-  .infofirst{
-    background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 10px;
-    width: 450px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 120px;
-    border-radius: 20px;
-  }
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 27px;
-    width: 27px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -7px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 18px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -9px;
-  }
-   
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-}
-@media screen and (min-width: 1600px) and (max-width: 2048px){
-  
-  .App {
-    text-align: center;
-    font-size: 25px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-    margin-left: 100px;
-  }
-  body{
-    background-color: rgb(198, 251, 233);
-  }
-  .header{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 120px;
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(255, 255, 255);
-    width: 1100px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 90px;
-    border: solid rgb(101, 99, 117) 12px;
-  }
-  .Navbar{
-    width: 1400px;
-    height: 150px;
-    background-color: #c58c2a;
-    margin-left: 0px;
-    margin-top: 20px;
-    padding: 20px;
-    padding: 30px;
-    border-radius: 30px;
-  }
+    }
 
-  .nav{
-    width: 330px;
-    height: 90px;
-    position: relative;
-    float: left;
+  .navnumber{
+    margin-top: 40px;
     margin-left: 20px;
-    padding: 7px;
-    font-size: 30px;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .biginput{
-    width: 1250px;
-    height: 80px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 0px;
-    border-radius: 30px;
-    margin-bottom: 4px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 15px;
-    font-size:45px;
-    border-radius: 10px;
-    margin-top: 13px;
-    height: 70px;
 
   }
-  .btn-success{
+  .navtext{
     font-size: 35px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 10px;
-  }
- 
-  .input{
-    background-color: #83a5c3;
-    width:600px;
-    height: 80px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    border-radius: 20px;
-    border: red solid 1px;
-    margin-top: 3px;
-  }
-  .value{
-    border: 2px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 200px;
-    margin-left: 10px;
-    border-radius: 20px;
-    margin-top: 7px;
-    height: 60px;
-  }
-  .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 10px;
-    width: 550px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    border-radius: 20px;
-    margin-top: px;
-    margin-bottom: 2px;
-  }
-  .div{
-    position: relative;
-    float: left;
-    margin-top: 8px;
-    margin-left: 000px;
-    border-radius: 20px;
-    
-  }
-  .infos1,.infos2{
-    position: relative;
-    float: left;
-    margin-left: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 20px;
-  }
-  .info,.infofirst{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 10px;
-    width: 340px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 140px;
-    border-radius: 20px;
-  }
-  .infofirst{
-    background-color: #e979cb;
-  }
-  .numbers{
-    width: 220px;
-    height: 40px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: 0;
-
   }
 
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 36px;
-    width: 36px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -7px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 16px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: 13px;
-  }
-   
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  .inputNumber{
-    width: 150px;
-    position: absolute;
-    right:0;
-    margin-right: 3px;
-    margin-top: -3px;
-    border-radius: 10px;
-  }
-
-}
-@media screen and (min-width: 1201px) and (max-width: 1600px){
-  
-  .App {
-    text-align: center;
-    font-size: 18px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-  }
-  body{
-    background-color: rgb(198, 251, 233);
-  }
-  .header{
-    margin-bottom: 5px;
-    margin-top: 5px;
-    margin-left: 200px;
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(255, 255, 255);
-    width: 800px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 70px;
-    border: solid rgb(101, 99, 117) 12px;
-  }
-  .Navbar{
-    width: 1050px;
-    height: 120px;
-    background-color: #c58c2a;
-    margin-left: 100px;
-    margin-top: 20px;
-    padding: 10px;
-    border-radius: 30px;
-  }
-
-  .nav{
-    width: 240px;
-    height: 90px;
-    position: relative;
-    float: left;
-    margin-left: 10px;
-    padding: 7px;
-    font-size: 25px;
-    text-align: left;
-    border-radius: 20px;
-  }
   .biginput{
-    width: 920px;
-    height: 60px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    border-radius: 30px;
-    margin-bottom: 2px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    font-size:35px;
+    font-size:25px;
     border-radius: 10px;
-    margin-top: 9px;
-    height:52px;
+    margin-top: 15px;
+    height: 50px;
 
   }
-  .btn-success{
-    font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 10px;
+  .btn-info{
+
+    font-size:22px;
+    border-radius: 10px;
+    margin-top: 15px;
+    height: 50px;
   }
- 
+  
+  
+  .btn-primary{
+    font-size: 35px;
+    margin-top: 8px;
+  }
   .input{
-    background-color: #83a5c3;
-    width:500px;
-    height: 60px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    border-radius: 20px;
-    border: red solid 1px;
-    margin-top: 0px;
+    height: 20px;
   }
-  .value{
-    border: 2px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 125px;
-    margin-left: 10px;
-    border-radius: 20px;
-    margin-top: 7px;
+  .inputtop{
+    margin-bottom: 43px;
+  }
+  .inputNumber{
+    width: 140px;
   }
   .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 10px;
-    width: 400px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    border-radius: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height:55px;
+    width: 350px;
   }
   .div{
-    position: relative;
-    float: left;
-    margin-top: 3px;
-    margin-left: 100px;
-    border-radius: 20px;
-    
+    padding: 18px;
+    height: 140px;
   }
-  .infos1{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 2px;
-    margin-bottom: 10px;
-    border-radius: 20px;
+  .inf{
+    margin-top: 40px ;
+    margin-right: 4%;
   }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 100px;
-    margin-top: 5px;
-    border-radius: 20px;
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 20px;
+  .infos1,.infos2,.infos3{
+    margin-bottom: 55px;
   }
   .info{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 10px;
-    width: 262px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
-  }
-  .numbers{
-    width: 140px;
-    height: 25px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: 0;
+
+    font-size: 26px;
+    padding: 28px;
 
   }
-  .infofirst{
-    background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 10px;
-    width: 230px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
-  }
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
   
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 27px;
-    width: 27px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -7px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 16px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: 13px;
-  }
-   
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  .inputNumber{
-    width: 110px;
-    position: absolute;
-    right:0;
-    margin-right: 3px;
-    margin-top: -3px;
-    border-radius: 10px;
-  }
-
 }
-@media screen and (min-width: 990px) and (max-width: 1200px){
-  
+
+
+@media screen and (min-width: 767px) and (max-width: 1200px){
   .App {
-    text-align: center;
-    font-size: 16px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-    margin-left: 20px;
-  }
-  body{
-    background-color: rgb(198, 251, 233);
+    font-size: 10px;
   }
   .header{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 90px;
-    text-align: center;
-    font-size: 27px;
-    background-color: rgb(255, 255, 255);
-    width: 700px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 90px;
-    border: solid rgb(101, 99, 117) 12px;
-  }
-  .Navbar{
-    width: 900px;
-    height: 120px;
-    background-color: #c58c2a;
-    margin-left: 0px;
-    margin-top: 20px;
-    padding: 8px;
-    padding: 30px;
-    border-radius: 30px;
-  }
-
-  .nav{
-    width: 200px;
-    height: 70px;
-    position: relative;
-    float: left;
-    margin-left: 8px;
-    padding: 7px;
-    font-size: 20px;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .biginput{
-    width: 840px;
-    height: 45px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 0px;
-    border-radius: 30px;
-    margin-bottom: 4px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    font-size:25px;
-    border-radius: 10px;
-    margin-top: 7px;
-    height:42px;
-
-  }
-  .btn-success{
-    font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 10px;
-  }
- 
-  .input{
-    background-color: #83a5c3;
-    width:400px;
-    height: 60px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    border-radius: 20px;
-    border: red solid 1px;
-    margin-top: 3px;
-  }
-  .value{
-    border: 2px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 125px;
-    margin-left: 10px;
-    border-radius: 20px;
-    margin-top: 7px;
-  }
-  .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 10px;
-    width: 380px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    border-radius: 20px;
-    margin-top: px;
-    margin-bottom: 2px;
-    height: 50px;
-  }
-  .div{
-    position: relative;
-    float: left;
-    margin-top: 8px;
-    margin-left: 0px;
-    border-radius: 20px;
-    
-  }
-  .infos1{
-    position: relative;
-    float: left;
-    margin-left: 00px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 00px;
-    margin-top: 20px;
-    border-radius: 20px;
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 20px;
-  }
-  .info, .infofirst{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 10px;
-    width: 220px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
-  }
-  .numbers{
-    width: 120px;
-    height: 25px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 40px;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: 0;
-
-  }
-  .infofirst{
-    background-color: #e979cb;
-
-  }
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 27px;
-    width: 27px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -7px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 16px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: 13px;
-  }
-   
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  .inputNumber{
-    width: 110px;
-    position: absolute;
-    right:0;
-    margin-right: 3px;
-    margin-top: -3px;
-    border-radius: 10px;
-  }
-
-}
-@media screen and (min-width: 767px) and (max-width: 990px){
-  
-  .App {
-    text-align: center;
-    font-size: 15px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-    margin-left: 20px;
-  }
-  body{
-    background-color: rgb(198, 251, 233);
-  }
-  .header{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    margin-left: 90px;
-    text-align: center;
     font-size: 23px;
-    background-color: rgb(255, 255, 255);
-    width: 550px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 70px;
-    border: solid rgb(101, 99, 117) 12px;
+    height: 40px;
   }
-  .Navbar{
-    width: 720px;
-    height: 120px;
-    background-color: #c58c2a;
-    margin-left: 0px;
-    margin-top: 20px;
-    padding: 8px;
-    padding: 30px;
-    border-radius: 30px;
+  .hydranet{
+    font-size: 25px;
   }
-
-  .nav{
-    width: 150px;
-    height: 70px;
-    position: relative;
-    float: left;
-    margin-left: 8px;
-    padding: 7px;
-    font-size: 16px;
-    text-align: left;
-    border-radius: 20px;
-  }
-  .biginput{
-    width: 600px;
-    height: 45px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 0px;
-    border-radius: 30px;
-    margin-bottom: 4px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    font-size:25px;
-    border-radius: 10px;
-    margin-top: 7px;
-    height:42px;
-
-  }
-  .btn-success{
-    font-size: 30px;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 0px;
-  }
- 
-  .input{
-    background-color: #83a5c3;
-    width:270px;
-    height: 60px;
-    position: relative;
-    float: left;
-    padding: 10px;
-    border-radius: 20px;
-    border: red solid 1px;
+  .hdxlogo{
+    height: 35px;
+    width: 35px;
     margin-top: 3px;
   }
-  .value{
-    border: 2px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 10px;
-    width: 125px;
-    margin-left: 10px;
-    border-radius: 20px;
-    margin-top: 7px;
-  }
-  .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 10px;
-    width: 300px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    border-radius: 20px;
-    margin-top: px;
-    margin-bottom: 2px;
-    height: 50px;
-  }
-  .div{
-    position: relative;
-    float: left;
-    margin-top: 8px;
-    margin-left: 0px;
-    border-radius: 20px;
-    
-  }
-  .infos1{
-    position: relative;
-    float: left;
-    margin-left: 00px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 20px;
-  }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 00px;
-    margin-top: 20px;
-    border-radius: 20px;
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 20px;
-  }
-  .info, .infofirst{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 6px;
-    width: 170px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    height: 100px;
-    border-radius: 20px;
-  }
-  .numbers{
-    width: 120px;
-    height: 25px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 20px;
-    margin-bottom: 10px;
-    position: absolute;
-    bottom: 0;
-
-  }
-  .infofirst{
-    background-color: #e979cb;
-
-  }
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 27px;
-    width: 27px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -7px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 16px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: 13px;
-  }
-   
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  .inputNumber{
-    width: 110px;
-    position: absolute;
-    right:0;
-    margin-right: 3px;
-    margin-top: -0px;
-    border-radius: 10px;
-  }
-
-}
-@media screen and (min-width: 479px) and (max-width: 767px){
-  
-  .App {
-    text-align: center;
-    font-size: 9px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-  
-  }
-  body{
-    background-color: rgb(198, 251, 233);
-  }
-  .header{
-    margin-bottom: 3px;
-    margin-top: 5px;
-    text-align: center;
-    margin-left: 60px;
-    font-size: 16px;
-    background-color: rgb(255, 255, 255);
-    width: 330px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 55px;
-    border: solid rgb(101, 99, 117) 12px;
-  }
   .Navbar{
-    width: 445px;
-    height: 80px;
-    background-color: #c58c2a;
+    height: 60px;
+  }
+  .nav{
+    margin-left: 20px;
+    font-size:10px;
+
+    }
+    .bars{
+      margin-left: 4%;
+    }
+
+  .navnumber{
+    margin-top: 18px;
     margin-left: 10px;
-    margin-top: 10px;
-    padding: 13px;
-    border-radius: 30px;
+
+  }
+  .navtext{
+    font-size: 13px;
   }
 
-  .nav{
-    width: 110px;
-    height: 55px;
-    position: relative;
-    float: left;
-    margin-left: 3px;
-    padding: 5px;
-    font-size: 13px;
-    text-align: left;
-    border-radius: 20px;
-  }
   .biginput{
-    width: 390px;
-    height: 26px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 13px;
-    border-radius: 10px;
-    margin-bottom: 4px;
+
+    font-size:9px;
+    border-radius: 6px;
+    margin-top: 10px;
+    height: 30px;
+
   }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
+  .btn-info{
+    width: 13%;
     font-size:12px;
     border-radius: 10px;
-    margin-top: 5px;
-    height:27px;
-  }
-  .btn-success{
-    font-size: 11px;
     margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 4px;
-  }
- 
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-  
-  
-  .input{
-    background-color: #83a5c3;
-    width:165px;
-    height: 20px;
-    position: relative;
-    float: left;
-    padding: 15px;
-    border-radius: 20px;
-    border: red solid 1px;
-    margin-top: 3px;
-  }
-  .value{
-    border: 2px solid red;
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 7px;
-    width: 70px;
-    margin-left: 2px;
-    border-radius: 20px;
-    margin-top: 2px;
     height: 30px;
   }
+  
+  
+  .btn-primary{
+    font-size: 14px;
+    margin-top: 3px;
+  }
+  .input{
+    height: 10px;
+  }
+  .inputtop{
+    margin-bottom: 30px;
+  }
+  .inputNumber{
+    width: 80px;
+  }
   .text{
-    border: 2px solid red;
-    background-color: aqua;
-    padding: 4px;
-    width: 200px;
-    position: relative;
-    float: left;
-    margin-right: 2px;
-    border-radius: 20px;
-    margin-top: 6px;
-    margin-bottom: 2px;
-    height: 26px;
+    width: 230px;
   }
   .div{
-    position: relative;
-    float: left;
-    margin-top: 1px;
-    margin-left: 10px;
-    border-radius: 20px;
+    padding: 10px;
+    height: 75px;
+  }
+  .inf{
+    margin-top: 20px ;
+    width: 42%;
+    margin-right: 1%;
 
   }
-  .infos1{
-    position: relative;
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 20px;
+  .infos1,.infos2,.infos3{
+    margin-bottom: 30px;
   }
-  .infos2{
-    position: relative;
-    float: left;
-    margin-left: 10px;
-    margin-top: 5px;
-    border-radius: 20px;
+  .info, .infolast{
+
+    font-size: 10px;
+    padding: 14.5px;
+    
 
   }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 20px;
+}
+@media screen and (min-width: 479px) and (max-width: 767px){
+  .App {
+    font-size: 7px;
   }
-  .info{
-    position: relative;
-    float: left;
-    background-color: #f17e7e;
-    border: 2px solid rgb(157, 32, 32);
-    padding: 6px;
-    width: 105px;
-    position: relative;
-    float: left;
-    margin-right: 5px;
-    height:60px;
-    border-radius: 20px;
+  .header{
+    font-size: 16px;
+    height: 29px;
   }
-  .numbers{
-    width: 68px;
-    height: 15px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 20px;
-    margin-left: 12px;
-    margin-top: 2px;
-    margin-bottom: 5px;
-    position: absolute;
-    bottom: 0;
+  .hydranet{
+    font-size: 16px;
   }
-  .infofirst{
-    background-color: #e979cb;
-    position: relative;
-    float: left;
-    border: 2px solid rgb(167, 82, 82);
-    padding: 6px;
-    width: 110px;
-    position: relative;
-    float: left;
-    margin-right: 5px;
-    height: 60px;
-    border-radius: 20px;
+  .hdxlogo{
+    height: 26px;
+    width: 26px;
+    margin-top: 0px;
   }
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
+  .Navbar{
+    height: 40px;
+  }
+  .nav{
+    margin-left: 5px;
+    font-size:8px;
+
+    }
+    .bars{
+      margin-left: 3%;
+    }
+
+  .navnumber{
+    margin-top: 8px;
+    margin-left: 4px;
+    margin-top: 11px;
+
+  }
+  .navtext{
+    font-size: 9px;
+  }
+
+  .biginput{
+    font-size:6px;
+    border-radius: 6px;
+    margin-top: 13px;
+    height: 20px;
+    width: 77%;
+    margin-left: 3%;
+
+  }
+  .btn-info{
+    width: 17%;
+    font-size:7px;
+    border-radius: 5px;
+    margin-top: 13px;
+    height: 20px;
   }
   
+  
+  .btn-primary{
+    font-size: 7px;
+    margin-top: 3px;
+  }
+  .input{
+    height: 10px;
+    width: 96%;
+  }
+  .inputtop{
+    width: 96%;
+    margin-bottom: 25px;
+    margin-top: 2px;
+  }
+  .inputNumber{
+    width: 80px;
+  }
+  .text{
+    width: 110px;
+  }
+  .div{
+    padding: 6px;
+    height: 58px;
+  }
+  .inf{
+    margin-top: 10px ;
+    width: 43%;
+    margin-right: 1%;
+
+  }
+  .infos1,.infos2,.infos3{
+    margin-bottom: 25px;
+  }
+  .info, .infolast{
+
+    font-size: 7px;
+    padding: 10.51px;
+    
+
+  }
   input[type="range"]::-webkit-slider-thumb {
-    border: none;
+   
     height: 14px;
     width: 14px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    transform: scale(1.9) rotateZ(var(--thumb-rotate, 10deg));
-    cursor: pointer;
-    margin-top: -4px;
-    -webkit-appearance: none;
+    margin-top: -5px;
+
   }
-  
   input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 8px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -9px;
+    height: 5px;
   }
-  .inputNumber{
-    width: 55px;
-    font-size: 6px;
-    margin-left: 5px;
-    margin-top: 1px;
-
-  }
+ 
 }
-@media screen and (min-width: 410px) and (max-width: 479px){
-  
+@media screen and (min-width: 390px) and (max-width: 479px){
   .App {
-    text-align: center;
     font-size: 6px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-
-  }
-  .Navbar{
-    width: 390px;
-    height: 80px;
-    background-color: #c58c2a;
-    margin-left: 10px;
-    margin-top: 8px;
-    padding: 13px;
-    border-radius: 30px;
-    border: solid 2px rgb(0, 0, 0);
-  }
-
-  .nav{
-    width: 90px;
-    height: 55px;
-    position: relative;
-    float: left;
-    margin-left: 3px;
-    padding: 5px;
-    font-size: 10px;
-    text-align: left;
-    border-radius: 20px;
-    border: solid 2px rgb(47, 23, 23);
-  }
-  .biginput{
-    width: 330px;
-    height: 22px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 13px;
-    border-radius: 10px;
-    margin-bottom: 4px;
-    margin-top: 5px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    font-size:10px;
-    border-radius: 10px;
-    height:23px;
-    margin-top: 5px;
-  }
-  .btn-success{
-    font-size: 9px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 4px;
-  }
-  body{
-    background-color: rgb(161, 255, 224);
   }
   .header{
-    margin-bottom: 3px;
-    margin-top: 5px;
-    text-align: center;
-    margin-left: 40px;
-    font-size: 16px;
-    background-color: rgb(255, 255, 255);
-    width: 330px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 55px;
-    border: solid rgb(101, 99, 117) 12px;
+    font-size: 11px;
+    height: 24px;
   }
-  
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
+  .hydranet{
+    font-size: 12px;
   }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-
-  .input{
-    background-color: #83a5c3;
-    width:180px;
-    height: 10px;
-    position: relative;
-    float: left;
-    padding: 9px;
-    border-radius: 8px;
-    border: rgb(0, 0, 0) solid 1px;
-    margin-top: 3px;
-  }
-  .value{
-    border: 2px solid rgb(0, 0, 0);
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 2.5px;
-    width: 48px;
-    margin-left: 2px;
-    border-radius: 8px;
-    margin-top: 3px;
+  .hdxlogo{
     height: 20px;
-  }
-  .text{
-    border: 2px solid rgb(0, 0, 0);
-    background-color: aqua;
-    padding: 4px;
-    width: 150px;
-    position: relative;
-    float: left;
-    margin-right: 2px;
-    border-radius: 15px;
-    margin-top: 3px;
-    margin-bottom: 1px;
-    height: 21px;
-  }
-  .div{
-    position: relative;
-    float: left;
-    margin-top: 1px;
-    margin-left: 10px;
-    border-radius: 15px;
-
-  }
-  .infos1,.infos2{
-    position: relative;
-    float: left;
-    margin-left: 9px;
-    margin-top: 3px;
-    margin-bottom: 1px;
-    border-radius: 15px;
-  }
-
-  .info, .infofirst{
-    position: relative;
-    float: left;
-    background-color: #fe8b84;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 4px;
-    width: 95px;
-    position: relative;
-    float: left;
-    margin-right: 2px;
-    height:45px;
-    border-radius: 15px;
-  }
-  .infofirst{
-    background-color: #d084f9; 
-  }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 15px;
-  }
-  .numbers{
-    width: 50px;
-    height: 10px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 15px;
-    margin-left: 17px;
-    margin-top: 2px;
-    margin-bottom: 7px;
-    position: absolute;
-    bottom: 0;
-    height: 10px;
-  }
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 9px;
-    width: 9px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    cursor: pointer;
-    margin-top: -3px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -10px;
-  }
-  .inputNumber{
-    font-size: 5px;
-    width: 45px;
-    margin-top: -2px;
-  }
-}
-
-@media screen and (max-width: 410px){
-  
-  .App {
-    text-align: center;
-    font-size: 6px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight:700;
-
+    width: 20px;
+    margin-top: 0px;
   }
   .Navbar{
-    width: 390px;
-    height: 80px;
-    background-color: #c58c2a;
-    margin-left: 10px;
-    margin-top: 8px;
-    padding: 13px;
-    border-radius: 30px;
-    border: solid 2px rgb(0, 0, 0);
-  }
-
-  .nav{
-    width: 90px;
-    height: 55px;
-    position: relative;
-    float: left;
-    margin-left: 3px;
-    padding: 5px;
-    font-size: 10px;
-    text-align: left;
-    border-radius: 20px;
-    border: solid 2px rgb(47, 23, 23);
-  }
-  .biginput{
-    width: 330px;
-    height: 22px;
-    text-align: center;
-    position: relative;
-    float: left;
-    margin-left: 13px;
-    border-radius: 10px;
-    margin-bottom: 4px;
-    margin-top: 5px;
-  }
-  .biginputbuton{
-    position: relative;
-    float: left;
-    margin-left: 5px;
-    font-size:10px;
-    border-radius: 10px;
-    height:23px;
-    margin-top: 5px;
-  }
-  .btn-success{
-    font-size: 9px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 4px;
-  }
-  body{
-    background-color: rgb(161, 255, 224);
-  }
-  .header{
-    margin-bottom: 3px;
-    margin-top: 5px;
-    text-align: center;
-    margin-left: 40px;
-    font-size: 16px;
-    background-color: rgb(255, 255, 255);
-    width: 330px;
-    border-radius: 20px;
-    padding: 2px;
-    color:rgb(78, 11, 60);
-    height: 55px;
-    border: solid rgb(101, 99, 117) 12px;
-  }
-  
-  .slider {
-    -webkit-appearance: none;  /* Override default CSS styles */
-    appearance: none;
-    width: 99%; /* Full-width */
-    height: 10px; /* Specified height */
-    background: #2187e0; /* Grey background */
-    outline: none; /* Remove outline */
-    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
-    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
-    transition: opacity .2s;
-  }
-  
-   .slider:hover {
-    opacity: 8; 
-  }  
-
-  .input{
-    background-color: #83a5c3;
-    width:180px;
-    height: 10px;
-    position: relative;
-    float: left;
-    padding: 9px;
-    border-radius: 8px;
-    border: rgb(0, 0, 0) solid 1px;
-    margin-top: 3px;
-  }
-  .value{
-    border: 2px solid rgb(0, 0, 0);
-    background-color: aqua;
-    position: relative;
-    float: left;
-    padding: 2.5px;
-    width: 48px;
-    margin-left: 2px;
-    border-radius: 8px;
-    margin-top: 3px;
-    height: 20px;
-  }
-  .text{
-    border: 2px solid rgb(0, 0, 0);
-    background-color: aqua;
-    padding: 4px;
-    width: 150px;
-    position: relative;
-    float: left;
-    margin-right: 2px;
-    border-radius: 15px;
-    margin-top: 3px;
-    margin-bottom: 1px;
-    height: 21px;
-  }
-  .div{
-    position: relative;
-    float: left;
+    height: 30px;
     margin-top: 1px;
-    margin-left: 10px;
-    border-radius: 15px;
+  }
+  .nav{
+    margin-left: 5px;
+    font-size:8px;
+ }
+ .navs{
+  margin-right:57px ;
+ }
+    .bars{
+      margin-left: 1.7%;
+      margin-top: -7px;
+    }
+
+  .navnumber{
+    margin-left: 4px;
+    margin-top: 11px;
+    font-size: 7px;
 
   }
-  .infos1,.infos2{
-    position: relative;
-    float: left;
-    margin-left: 9px;
-    margin-top: 3px;
-    margin-bottom: 1px;
-    border-radius: 15px;
+  .navtext{
+    font-size: 7px;
   }
 
-  .info, .infofirst{
-    position: relative;
-    float: left;
-    background-color: #fe8b84;
-    border: 2px solid rgb(0, 0, 0);
-    padding: 4px;
-    width: 95px;
-    position: relative;
-    float: left;
-    margin-right: 2px;
-    height:45px;
-    border-radius: 15px;
+  .biginput{
+    font-size:5px;
+    border-radius: 6px;
+    margin-top: 13px;
+    height: 16px;
+    width: 77%;
+    margin-left: 3%;
+    border: 1.5px solid rgb(76, 195, 183);
+
   }
-  .infofirst{
-    background-color: #d084f9; 
+  .btn-info{
+    width: 15%;
+    font-size:7px;
+    border-radius: 5px;
+    margin-top: 13px;
+    height: 16px;
+    padding: 2px;
   }
-  .bars{
-    position: relative;
-    float: left;
-    border-radius: 15px;
-  }
-  .numbers{
-    width: 50px;
-    height: 10px;
-    background-color: rgb(255, 236, 198);
-    border-radius: 15px;
-    margin-left: 17px;
+  
+  
+  .btn-primary{
+    font-size: 7px;
     margin-top: 2px;
-    margin-bottom: 7px;
-    position: absolute;
-    bottom: 0;
+    height: 16px;
+    width: 34px;
+    padding: 2px;
+    margin-right: 4%;
+  }
+  .input{
     height: 10px;
+    width: 96%;
   }
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: transparent;
-    width: 95%;
-    max-width: 900px;
-    outline: none;
-  }
-  
-  input[type="range"]::-webkit-slider-thumb {
-    border: none;
-    height: 9px;
-    width: 9px;
-    background-color: transparent;
-    background-image:url("https://imgyukle.com/f/2022/08/31/naCvUh.png"); 
-    background-position: 0 0;
-    background-size: cover;
-    cursor: pointer;
-    margin-top: -3px;
-    -webkit-appearance: none;
-  }
-  
-  input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
-    height: 5px;
-    background: rgb(67, 104, 159);
-    border-radius: 10px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    margin-top: -10px;
+  .inputtop{
+    width: 96%;
+    margin-bottom: 20px;
+    margin-top: 2px;
   }
   .inputNumber{
-    font-size: 5px;
-    width: 45px;
-    margin-top: -2px;
+    width: 60px;
+  }
+  .text{
+    width: 110px;
+    margin-top: 2px;
+  }
+  .div{
+    padding: 4px;
+    height: 46px;
+    border-bottom: solid 1.5px rgb(37, 97, 107);
+  }
+  .inf{
+    margin-top: 10px ;
+    width: 46%;
+    margin-right: 0%;
+
+  }
+  .infos1,.infos2,.infos3{
+    margin-bottom: 25px;
+  }
+  .info, .infolast{
+
+    font-size: 6.4px;
+    padding: 5.5px;
+    
+
+  }
+  input[type="range"]::-webkit-slider-thumb {
+   
+    height: 12px;
+    width: 12px;
+    margin-top: -3px;
+
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
   }
 }
+@media screen and (max-width: 390px){
+  .App {
+    font-size: 6px;
+  }
+  .header{
+    font-size: 11px;
+    height: 24px;
+  }
+  .hydranet{
+    font-size: 12px;
+  }
+  .hdxlogo{
+    height: 20px;
+    width: 20px;
+    margin-top: 0px;
+  }
+  .Navbar{
+    height: 30px;
+    margin-top: 1px;
+  }
+  .nav{
+    margin-left: 5px;
+    font-size:8px;
+ }
+ .navs{
+  margin-right:57px ;
+ }
+    .bars{
+      margin-left: 1.7%;
+      margin-top: -7px;
+    }
+
+  .navnumber{
+    margin-left: 4px;
+    margin-top: 11px;
+    font-size: 7px;
+
+  }
+  .navtext{
+    font-size: 7px;
+  }
+
+  .biginput{
+    font-size:5px;
+    border-radius: 6px;
+    margin-top: 13px;
+    height: 16px;
+    width: 77%;
+    margin-left: 3%;
+    border: 1.5px solid rgb(76, 195, 183);
+
+  }
+  .btn-info{
+    width: 15%;
+    font-size:7px;
+    border-radius: 5px;
+    margin-top: 13px;
+    height: 16px;
+    padding: 2px;
+  }
+  
+  
+  .btn-primary{
+    font-size: 7px;
+    margin-top: 2px;
+    height: 16px;
+    width: 34px;
+    padding: 2px;
+    margin-right: 4%;
+  }
+  .input{
+    height: 10px;
+    width: 96%;
+  }
+  .inputtop{
+    width: 96%;
+    margin-bottom: 20px;
+    margin-top: 2px;
+  }
+  .inputNumber{
+    width: 60px;
+  }
+  .text{
+    width: 110px;
+    margin-top: 2px;
+  }
+  .div{
+    padding: 4px;
+    height: 46px;
+    border-bottom: solid 1.5px rgb(37, 97, 107);
+  }
+  .inf{
+    margin-top: 10px ;
+    width: 46%;
+    margin-right: 0%;
+
+  }
+  .infos1,.infos2,.infos3{
+    margin-bottom: 25px;
+  }
+  .info, .infolast{
+
+    font-size: 6.4px;
+    padding: 5.5px;
+    
+
+  }
+  input[type="range"]::-webkit-slider-thumb {
+   
+    height: 12px;
+    width: 12px;
+    margin-top: -3px;
+
+  }
+  input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+  }
+}
+  
