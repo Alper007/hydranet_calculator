@@ -4,12 +4,16 @@
   font-weight:500;
 }
 body{
-  background-color: rgb(8, 20, 64);
+  background-color: rgb(11, 21, 60);
+  
+}
+image{
+  opacity: 0.1;
 }
 .header{
   font-size: 35px;
   text-align: center;
-  color:rgb(43, 225, 238);
+  color:rgba(225, 240, 241, 0.674);
   height: 60px;
   padding: 3px;
   background-color: rgb(6, 16, 54);
@@ -108,11 +112,13 @@ body{
   margin-top: 4px;
 }
 .checkbtn{
-  font-size: 17px;
-  background-color: #256bb5;
+  font-size: 16px;
+  background-color: #1b5089a3;
   border-radius: 10px;
   width: 65px;
-  color: white;
+  color: rgb(94, 244, 77);
+  border: none;
+  padding: 3px;
 }
 .input{
   width:90%;
@@ -134,7 +140,7 @@ body{
   float: right;
   border-radius: 7px;
   background-color: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.289) !important;
+  border: 2px solid rgba(29, 204, 163, 0.289) !important;
   box-shadow: none !important;
   color: rgb(169, 229, 255);
   padding: 5px;
@@ -175,7 +181,7 @@ b{
 .inf{
   float: right;
   width: 35%;
-  margin-top: 20px ;
+  margin-top: 30px ;
   margin-right: 5%;
 
 }
@@ -186,13 +192,14 @@ b{
 
 }
 .info, .infolast{
-  border: 2px dashed #ffffff3e;
+  
+  border: 2px solid rgba(255, 255, 255, 0.116);
   margin-top: 2px;
   width: 95%;
-  background-color: transparent;
+  background-color:transparent ;
   font-size: 15px;
   padding: 15px;
-  border-radius: 8px;
+  
 
 }
 .infolast{

@@ -39,6 +39,7 @@ function App() {
   const [D1, setD1] =  useState(1);
   const [D2, setD2] =  useState(1);
   const [check, setCheck] = useState(true);
+  const [price, setPrice] = useState("");
 
   const [Eng, setEng] = useState(true);
   const [totalHdx, setTotalHdx] = useState(BigNumber.from(0).toString());
@@ -59,6 +60,9 @@ function App() {
     setD2(BigNumber.from(stakedHdx).toString().slice(0,-9));
     setD1(BigNumber.from(shdxAmount).toString().slice(0,-9));
     
+    fetch('https://api.coingecko.com/api/v3/coins/hydranet/tickers')
+    .then( a => a.json())
+    .then( b => {setPrice(b.tickers[0].last.toString().substr(0,6))})
     
   },[shdxAmount]);
 
@@ -136,6 +140,10 @@ const changeLange = () =>{
             <div className='hydranet'>HYDRANET</div>
             <div ><img className='hdxlogo'src='https://i.hizliresim.com/ocna173.png'/></div>
           <div className='navs'>
+          <div className='nav'>
+            <div className='navtext'>Hdx Price:</div>
+            <div className='navnumber'>{(price)} </div>
+          </div>
           <div className='nav'>
             <div className='navtext'>Total Supply:</div>
             <div className='navnumber'>{comma(BigNumber.from(totalHdx).toString().slice(0,-9))} </div>
