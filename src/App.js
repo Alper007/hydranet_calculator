@@ -127,14 +127,6 @@ const language = document.getElementById("lang").value;
     break;
  }
 }
-const changeLange = () =>{
-  if (Eng === true){
-    setEng(false)
-  }else{
-    setEng(true);
-  }
-}
-
   const TMPSB = () =>{
     var y;
     if(MA<=12){
@@ -234,9 +226,8 @@ const changeLange = () =>{
           </div>
           </div>
           <div className='button'>
-            {/* <button className="btn btn-primary" onClick={changeLange}>{Eng ? "TURKISH" : "ENGLISH"}</button> */}
           </div>
-          <div className='nav' >
+          <div  >
             <select className="option" id="lang" onChange={changeLaguage}>  
               <option value="eng">English</option>  
               <option value="tur">Turkish</option>  
@@ -885,6 +876,13 @@ const changeLange = () =>{
   // DR: daily revenue
   // MR: monthly revenue
   // YR: yearly revenue
+
+  // "dev": "react-scripts start",
+  //   "start": "serve -s build",
+  //   "build": "react-scripts build",
+  //   "test": "react-scripts test --env=jsdom",
+  //   "eject": "react-scripts eject",
+  //   "heroku-postbuild": "npm run build"
 
 
 export default App;

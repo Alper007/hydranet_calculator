@@ -104,21 +104,27 @@ image{
   margin-left: 5px;
 
 }
-.btn-primary{
+.option{
   font-size: 20px;
   position: absolute;
   right: 0;
   margin-right: 6%;
   margin-top: 4px;
+  background-color:rgb(59, 209, 247);
+  color: rgb(8, 21, 40);
+  border-radius: 7px;
+  text-align: center;
+  padding: 2px;
 }
 .checkbtn{
   font-size: 16px;
-  background-color: #1b5089a3;
+  background-color: #2692b9;
   border-radius: 10px;
   width: 65px;
-  color: rgb(94, 244, 77);
+  color: rgb(7, 27, 129);
   border: none;
   padding: 3px;
+  font-weight: 700;
 }
 .input{
   width:90%;
