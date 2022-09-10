@@ -255,9 +255,9 @@ const changeLange = () =>{
                   case 'tur':
                     return "Slider :"
                   case 'ger':
-                    return "スライダー :"
+                    return "Schieberegler :"
                   case 'jap':
-                    return "ステーク中のHDXの比率"
+                    return "スライダー :"
                   default:
                     return null
                 }
@@ -325,7 +325,7 @@ const changeLange = () =>{
                   case 'ger':
                     return "Wenn Sie die Adresse von HDX eingeben, werden automatisch zwei Variablen ausgefüllt."
                   case 'jap':
-                    return "HDXのアドレスを入力すると、自動的に二変数が埋められます。"
+                    return "HDXのアドレスを入力すると、自動的に２つの変数が埋められます。"
                   default:
                     return null
                 }
@@ -503,7 +503,7 @@ const changeLange = () =>{
                   case 'ger':
                     return <div>Ihre MP-Anzahl: ({Math.floor(MPSB())} sollte x sein) :  <b>{C1}</b></div>
                   case 'jap':
-                    return <div>あなたのMP数： ({Math.floor(MPSB())} ｘであるはず) :  <b>{C1}</b></div>
+                    return <div>あなたのMP数： ({Math.floor(MPSB())} （であるはず）) :  <b>{C1}</b></div>
                   default:
                     return null
                 }
@@ -534,7 +534,7 @@ const changeLange = () =>{
                   case 'ger':
                     return <div>MP insgesamt: ({comma(Math.floor(TMPSB()))} sollte x sein) : <b>{comma(C2)}</b></div>
                   case 'jap':
-                    return <div>総MP数： ({comma(Math.floor(TMPSB()))} ｘであるはず) : <b>{comma(C2)}</b></div>
+                    return <div>総MP数： ({comma(Math.floor(TMPSB()))} （であるはず）) : <b>{comma(C2)}</b></div>
                   default:
                     return null
                 }
