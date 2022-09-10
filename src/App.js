@@ -174,7 +174,7 @@ const language = document.getElementById("lang").value;
                   case 'eng':
                     return   "Total Supply:"
                   case 'tur':
-                    return "Total Arz:"
+                    return "Total Arz :"
                   case 'ger':
                     return "Gesamtangebot "
                   case 'jap':
@@ -197,7 +197,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return " Gestakte HDX "
                   case 'jap':
-                    return "ステークされたHDX量"
+                    return "Staked HDX:"
                   default:
                     return null
                 }
@@ -216,7 +216,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return "Staking Verhältnis  "
                   case 'jap':
-                    return "ステーク中のHDXの比率"
+                    return "Shdx レート"
                   default:
                     return null
                 }
@@ -287,13 +287,13 @@ const language = document.getElementById("lang").value;
           {(() => {
         switch (lang) {
           case 'eng':
-            return <p>HDX DEX Fee Distribution Calculator Application</p>
+            return "HDX DEX Fee Distribution Calculator Application"
           case 'tur':
-            return <p>HDX DEX FEE Dağıtım Hesaplama Uygulaması</p>
+            return "HDX DEX FEE Dağıtım Hesaplama Uygulaması"
           case 'ger':
-            return <p>HDX DEX Gebührenverteilungsrechner</p>
+            return "HDX DEX Gebührenverteilungsrechner"
           case 'jap':
-            return <p>HDX DEX 手数料分配計算アプリケーション</p>
+            return" HDX DEX 手数料分配計算アプリケーション"
           default:
             return null
         }
@@ -324,7 +324,9 @@ const language = document.getElementById("lang").value;
               />
           </div>
           <div>
-            <button className="btn btn-info" onClick={fill}>Click</button>
+            <button className="btn btn-info" onClick={fill}>
+            Click
+             </button>
           </div>
         </div>
 
