@@ -50,15 +50,19 @@ image{
 .nav{
   position: relative;
   float: left;
-  margin-left: 20px;
+  margin-left: 10px;
   font-size:20px;
   font-size: 15px;
-  }
+  height: 60px;
+  border: 2px solid rgba(255, 255, 255, 0.115);
+  border-radius: 5px;
+  padding: 2px;
+}
 .navs{
   float: right;
   float: top;
   margin-right: 20%;
-  
+ 
 }
 .navnumber{
   position: absolute;
@@ -316,7 +320,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   
   
-  .btn-primary{
+  .option{
     font-size: 35px;
     margin-top: 8px;
   }
@@ -388,8 +392,8 @@ input[type="range"]::-webkit-slider-runnable-track {
     height: 60px;
   }
   .nav{
-    margin-left: 20px;
-    font-size:10px;
+    margin-left: 5px;
+    
 
     }
     .bars{
@@ -399,10 +403,11 @@ input[type="range"]::-webkit-slider-runnable-track {
   .navnumber{
     margin-top: 18px;
     margin-left: 10px;
+    font-size:11px;
 
   }
   .navtext{
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .biginput{
@@ -422,9 +427,10 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   
   
-  .btn-primary{
+  .option{
     font-size: 14px;
     margin-top: 3px;
+    margin-right: 3%;
   }
   .input{
     height: 10px;
@@ -534,7 +540,7 @@ input[type="range"]::-webkit-slider-runnable-track {
   }
   
   
-  .btn-primary{
+  .option{
     font-size: 7px;
     margin-top: 3px;
   }
@@ -665,7 +671,7 @@ b{
   }
   
   
-  .btn-primary{
+  .option{
     font-size: 7px;
     margin-top: 2px;
     height: 16px;
@@ -803,7 +809,7 @@ b{
   }
   
   
-  .btn-primary{
+  .option{
     font-size: 7px;
     margin-top: 2px;
     height: 16px;
