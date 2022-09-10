@@ -291,7 +291,7 @@ const language = document.getElementById("lang").value;
           case 'tur':
             return "HDX DEX FEE Dağıtım Hesaplama Uygulaması"
           case 'ger':
-            return "HDX DEX Gebührenverteilungsrechner"
+            return "DEX Gebühren Calculator"
           case 'jap':
             return" HDX DEX 手数料分配計算アプリケーション"
           default:
