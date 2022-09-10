@@ -618,7 +618,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return "Einnahmen der HNFT-Eigentümer (35%):"
                   case 'jap':
-                    return "HNFTの所有者たち収益（35％）："
+                    return "HNFTの所有者たちの収益（35％）："
                   default:
                     return null
                 }
