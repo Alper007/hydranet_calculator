@@ -496,7 +496,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return <div>Ihre MP-Anzahl: ({Math.floor(MPSB())} sollte x sein) :  <b>{C1}</b></div>
                   case 'jap':
-                    return <div>あなたのMP数： ({Math.floor(MPSB())} （であるはず）) :  <b>{C1}</b></div>
+                    return <div>あなたのMP数： ( であるはず {Math.floor(MPSB())}) :  <b>{C1}</b></div>
                   default:
                     return null
                 }
@@ -527,7 +527,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return <div>MP insgesamt: ({comma(Math.floor(TMPSB()))} sollte x sein) : <b>{comma(C2)}</b></div>
                   case 'jap':
-                    return <div>総MP数： ({comma(Math.floor(TMPSB()))} （であるはず）) : <b>{comma(C2)}</b></div>
+                    return <div>総MP数： ( であるはず {comma(Math.floor(TMPSB()))}) : <b>{comma(C2)}</b></div>
                   default:
                     return null
                 }
