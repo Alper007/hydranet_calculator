@@ -767,7 +767,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return <p>Marktkapitalisierung nach einem  (Monat:{MA}):</p>
                   case 'jap':
-                    return <p>あなたの１か月後の時価総額： ({MA} ay):</p>
+                    return <p>あなたの１か月後の時価総額： ({MA} 月 ):</p>
                   default:
                     return null
                 }
@@ -847,7 +847,7 @@ const language = document.getElementById("lang").value;
                   case 'ger':
                     return <p>Gesamteinnahmen ({MA} Monat)</p>
                   case 'jap':
-                    return <p>１年間あたりの収益：({MA} ay için)</p>
+                    return <p>総収益 :({MA}ヶ月間 )</p>
                   default:
                     return null
                 }
