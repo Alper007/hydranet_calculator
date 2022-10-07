@@ -122,7 +122,7 @@ image{
   background-color: #2692b9;
   border-radius: 10px;
   color: rgb(7, 27, 129);
-  border: 2px solid rgb(200, 132, 157);
+  border: none;
   padding: 4px;
   font-weight: 700;
 }
